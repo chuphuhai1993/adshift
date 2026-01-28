@@ -22,6 +22,12 @@ if (blogListElement) {
   blogListElement.innerHTML = blogCardHtml.repeat(3);
 }
 
+const blogPageListElement = document.querySelector('#blog-page-list');
+if (blogPageListElement) {
+  // Inject 3 cards as example
+  blogPageListElement.innerHTML = blogCardHtml.repeat(12);
+}
+
 const ctaElement = document.querySelector('#cta-component');
 if (ctaElement) {
   ctaElement.innerHTML = ctaHtml;
