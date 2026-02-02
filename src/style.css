@@ -84,7 +84,7 @@
   }
 
   .btn-primary {
-    @apply relative px-8 py-4 text-white font-semibold rounded-2xl
+    @apply relative px-8 py-4 text-white font-semibold
           bg-gradient-to-r from-[#155DFC] to-[#0092B8]
           hover:from-[#3372FF] hover:to-[#13BAE5]
           transition-all duration-300;
@@ -97,7 +97,7 @@
 
   .btn-secondary {
     @apply text-gray-800 hover:bg-gray-300 focus:ring-gray-500 
-    rounded-2xl border border-white/20
+    border border-white/20
     bg-[#E7E8EA] 
     transition-all duration-300;
 
@@ -138,15 +138,15 @@
   }
 
   .btn-sm {
-    @apply h-[40px] px-[12px] py-[10px] text-sm;
+    @apply h-[40px] px-[12px] py-[10px] text-sm rounded-xl;
   }
 
   .btn-md {
-    @apply h-[48px] px-[24px] py-[12px] text-sm;
+    @apply h-[48px] px-[24px] py-[12px] text-sm rounded-2xl;
   }
 
   .btn-lg {
-    @apply h-[56px] px-[40px] py-[16px] text-lg;
+    @apply h-[56px] px-[40px] py-[16px] text-lg rounded-2xl;
   }
 
   @keyframes scroll {

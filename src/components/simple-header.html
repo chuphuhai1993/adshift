@@ -5,7 +5,33 @@
         </a>
         <nav>
             <ul class="flex space-x-6">
-                <li><a href="#" class="hover:text-blue-600 transition text-gray-700 font-medium">EN</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-600 transition text-gray-700 font-medium flex items-center gap-1">
+                        EN
+                        <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute top-full right-0 mt-2 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-0 z-50">
+                        <!-- Background with blur -->
+                        <div class="absolute inset-0 bg-white/40 backdrop-blur-md border border-black/10 rounded-3xl"></div>
+                        
+                        <!-- Content -->
+                        <div class="relative p-2">
+                            <ul class="flex flex-col text-left">
+                                <li>
+                                    <a href="#" class="block px-4 py-3 text-gray-900 text-sm bg-[#E7E8EA] rounded-2xl font-medium mb-1">
+                                        EN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                        VI
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>

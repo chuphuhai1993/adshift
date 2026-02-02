@@ -94,6 +94,35 @@ if (tocToggle && tocContent && tocIcon) {
   });
 }
 
+// Payment Page Modal
+const editBtn = document.getElementById('edit-customer-info-btn');
+const modal = document.getElementById('customer-info-modal');
+const saveBtn = document.getElementById('save-customer-info-btn');
+const cancelBtn = document.getElementById('cancel-customer-info-btn');
+const backdrop = document.getElementById('modal-backdrop');
+
+if (editBtn && modal) {
+  const toggleModal = (show) => {
+    if (show) modal.classList.remove('hidden');
+    else modal.classList.add('hidden');
+  };
+
+  editBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModal(true);
+  });
+  
+  if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+  if (backdrop) backdrop.addEventListener('click', () => toggleModal(false));
+  
+  if (saveBtn) {
+    saveBtn.addEventListener('click', () => {
+      // Logic to update UI with new values could go here
+      toggleModal(false);
+    });
+  }
+}
+
 function initStatsAnimation() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
