@@ -1,4 +1,10 @@
 import './style.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fontsource/space-grotesk/300.css';
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/500.css';
+import '@fontsource/space-grotesk/600.css';
+import '@fontsource/space-grotesk/700.css';
 import headerHtml from './components/header.html?raw'
 import simpleHeaderHtml from './components/simple-header.html?raw'
 import footerHtml from './components/footer.html?raw'
