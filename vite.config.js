@@ -15,6 +15,7 @@ export default defineConfig({
         partner: resolve(__dirname, 'partner.html'),
         author: resolve(__dirname, 'author.html'),
         payment: resolve(__dirname, 'payment.html'),
+        paymentDone: resolve(__dirname, 'payment-done.html'),
         singlePost: resolve(__dirname, 'single-post.html'),
         maintenance: resolve(__dirname, 'maintenance.html'),
         errorPage: resolve(__dirname, '404.html'),
