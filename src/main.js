@@ -14,6 +14,42 @@ import authorPostItemHtml from './components/author-post-item.html?raw'
 const headerPlaceholder = document.querySelector('#header-placeholder');
 if (headerPlaceholder) {
   headerPlaceholder.innerHTML = headerHtml;
+
+  // Mobile Menu Logic
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileAccordionBtns = document.querySelectorAll('.mobile-accordion-btn');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+  }
+
+  if (closeMobileMenuBtn && mobileMenu) {
+    closeMobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Accordion Logic
+  if (mobileAccordionBtns) {
+    mobileAccordionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Toggle active class for icon rotation
+        btn.classList.toggle('active');
+        
+        // Toggle submenu visibility
+        const submenu = btn.nextElementSibling;
+        if (submenu) {
+          submenu.classList.toggle('hidden');
+        }
+      });
+    });
+  }
 }
 
 const simpleHeaderPlaceholder = document.querySelector('#simple-header-placeholder');

@@ -6,7 +6,9 @@
         <a href="./" class="flex items-center space-x-2">
             <img src="assets/ADShift_logo_light.svg" alt="ADShift Logo" class="h-8">
         </a>
-        <nav>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:block">
             <ul class="flex space-x-6 items-center">
                 <li><a href="about.html" class="hover:text-blue-600 transition text-gray-700 font-medium">About us</a></li>
                 <li class="relative group">
@@ -115,5 +117,70 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Mobile Controls -->
+        <div class="flex items-center gap-3 lg:hidden">
+            <button class="btn btn-primary btn-sm">Get In Touch</button>
+            <button id="mobile-menu-btn" class="text-gray-900 p-2 focus:outline-none">
+                <img src="assets/menu_icon.svg" alt="Menu" class="w-8 h-8">
+            </button>
+        </div>
     </div>
-</header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-white hidden flex flex-col h-full overflow-y-auto">
+        <!-- Header -->
+        <div class="px-6 py-4 flex justify-between items-center border-b border-gray-100">
+             <a href="./"><img src="assets/ADShift_logo_light.svg" class="h-8"></a>
+             <button id="close-mobile-menu-btn" class="text-gray-500 hover:text-gray-900 p-2">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+             </button>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="px-6 py-4 space-y-2 flex-grow">
+             <a href="about.html" class="block py-3 text-lg font-medium text-gray-900">About us</a>
+             
+             <!-- Services Accordion -->
+             <div class="border-t border-gray-100">
+                 <button class="mobile-accordion-btn flex w-full justify-between items-center py-3 text-lg font-medium text-gray-900 group">
+                     Services
+                     <svg class="w-4 h-4 transition-transform group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                 </button>
+                 <div class="hidden space-y-4 pb-4 pl-2">
+                     <a href="#" class="block text-gray-600 font-medium">Rent Google agency Ads account</a>
+                     <a href="#" class="block text-gray-600 font-medium">Rent Meta agency Ads account</a>
+                     <a href="#" class="block text-gray-600 font-medium">Rent Tiktok agency Ads account</a>
+                     <a href="#" class="block text-gray-600 font-medium">Rent Bing agency Ads account</a>
+                 </div>
+             </div>
+
+             <!-- Blog Accordion -->
+             <div class="border-t border-gray-100">
+                 <button class="mobile-accordion-btn flex w-full justify-between items-center py-3 text-lg font-medium text-gray-900 group">
+                     Blog
+                     <svg class="w-4 h-4 transition-transform group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                 </button>
+                 <div class="hidden space-y-4 pb-4 pl-2">
+                     <a href="#" class="block text-gray-600 font-medium">Google Ads</a>
+                     <a href="#" class="block text-gray-600 font-medium">Facebook Ads</a>
+                     <a href="#" class="block text-gray-600 font-medium">Tiktok Ads</a>
+                     <a href="#" class="block text-gray-600 font-medium">News</a>
+                 </div>
+             </div>
+
+             <a href="work.html" class="block py-3 text-lg font-medium text-gray-900 border-t border-gray-100">Our work</a>
+             <a href="partner.html" class="block py-3 text-lg font-medium text-gray-900 border-t border-gray-100">Partner</a>
+        </div>
+        
+        <!-- Language Selector -->
+        <div class="p-6 mt-auto border-t border-gray-100">
+             <button class="mobile-accordion-btn w-full bg-gray-100 rounded-xl px-4 py-3 flex justify-between items-center group transition-colors hover:bg-gray-200">
+                 <span class="font-medium text-gray-900">English</span>
+                 <svg class="w-4 h-4 text-gray-500 transition-transform duration-200 group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+             </button>
+             <div class="hidden mt-2 space-y-1">
+                  <a href="#" class="block px-4 py-3 text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors">Tiếng Việt</a>
+             </div>
+        </div>
+    </div>
