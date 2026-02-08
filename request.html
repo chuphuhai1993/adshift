@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Support - ADShift</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-cyan-50 min-h-screen flex flex-col font-['Space_Grotesk']">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 relative overflow-hidden">
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl md:text-3xl lg:text-4xl font-bold text-gradient mb-4 leading-tight">
+                        Send us your request. We will contact you in a sec!
+                    </h1>
+                    <p class="text-gray-600 text-lg">
+                        What are the conditions to use ADShift's support?
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl p-8 rounded-3xl bg-white card-shadow group flex flex-col items-center text-center hover:shadow-lg transition-all">
+                        <div class="gradient-secondary w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="assets/icon_maintenance.svg" class="w-8 h-8" alt="Using our services">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Using our services</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Our support ticket system is only provided for ADShift's customers. In case you haven't used any of our services yet, please submit your information at this <a href="#" class="text-blue-600 font-medium hover:underline">link</a>.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl p-8 rounded-3xl bg-white card-shadow group flex flex-col items-center text-center hover:shadow-lg transition-all">
+                        <div class="gradient-secondary w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-2.svg" class="w-8 h-8" alt="Contact salesperson">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Contact your salesperson first</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            All of ADShift's customers have a personal salesperson during their services. Please make sure that you have reached out to your salesperson before submitting a new request.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl p-8 rounded-3xl bg-white card-shadow group flex flex-col items-center text-center hover:shadow-lg transition-all">
+                        <div class="gradient-secondary w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                            <img src="assets/icon_why_2.svg" class="w-8 h-8" alt="Comply with our policy">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Comply with our policy</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            We only provide support services for businesses that align with our <a href="#" class="text-blue-600 font-medium hover:underline">terms and conditions</a>. We can decline to support your requests for any customers who do not comply with our policies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Send Ticket Section -->
+        <section class="py-20 relative overflow-hidden">
+             <!-- Decorative elements -->
+             <div class="absolute bottom-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                <div class="absolute bottom-[-20%] left-[-10%] w-[50%] h-[80%] bg-blue-400 rounded-full blur-[100px]"></div>
+             </div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <!-- Left Side -->
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-4xl font-bold text-gradient mb-4">Send us a Ticket.</h2>
+                        <p class="text-gray-600 mb-12 max-w-md text-lg">
+                            Please send us the detailed issues that you are facing. The more details we have, the more chance we can solve the problem.
+                        </p>
+                        
+                        <!-- Large Logo Graphic -->
+                        <div class="relative w-full max-w-md mt-auto">
+                             <img src="assets/ADShift_decorative.png" alt="ADShift" class="w-full h-auto drop-shadow-2xl opacity-60">
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Form -->
+                    <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+                        <form class="space-y-4" onsubmit="event.preventDefault();">
+                            <input type="text" placeholder="Your name" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none">
+                            <input type="email" placeholder="Your email" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none">
+                            
+                            <div class="flex space-x-2">
+                                <div class="bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 flex items-center min-w-[80px] cursor-pointer hover:bg-white hover:border-blue-500 transition-all">
+                                    <img src="https://flagcdn.com/w40/us.png" class="w-6 h-auto rounded-sm" alt="US">
+                                    <i class="fas fa-chevron-down ml-2 text-xs text-gray-500"></i>
+                                </div>
+                                <input type="tel" placeholder="Your phone number" class="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none">
+                            </div>
+
+                            <div class="relative">
+                                <select class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Service</option>
+                                    <option value="google">Google Ads</option>
+                                    <option value="facebook">Meta Ads</option>
+                                    <option value="tiktok">TikTok Ads</option>
+                                </select>
+                                <i class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
+                            </div>
+
+                            <input type="text" placeholder="Salesperson's name" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none">
+
+                            <div class="flex space-x-2">
+                                <div class="bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 flex items-center min-w-[80px] cursor-pointer hover:bg-white hover:border-blue-500 transition-all">
+                                    <img src="https://flagcdn.com/w40/us.png" class="w-6 h-auto rounded-sm" alt="US">
+                                    <i class="fas fa-chevron-down ml-2 text-xs text-gray-500"></i>
+                                </div>
+                                <input type="tel" placeholder="Salesperson's phone" class="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none">
+                            </div>
+
+                            <textarea placeholder="Describe your issues" rows="5" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none resize-none"></textarea>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200 mt-4">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <div class="gradient-secondary">
+            <div id="faq-component"></div>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

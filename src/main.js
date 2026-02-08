@@ -16,6 +16,9 @@ import ctaHtml from './components/cta.html?raw'
 import postItemHtml from './components/post-item.html?raw'
 import postSidebarItemHtml from './components/post-sidebar-item.html?raw'
 import authorPostItemHtml from './components/author-post-item.html?raw'
+import { createCaseStudyCard } from './components/case-study-card.js'
+import { createPartnerCard } from './components/partner-card.js'
+import { createFaqSection } from './components/faq-section.js'
 
 const headerPlaceholder = document.querySelector('#header-placeholder');
 if (headerPlaceholder) {
@@ -208,5 +211,50 @@ function initStatsAnimation() {
   if (statsSection) {
     observer.observe(statsSection);
   }
+}
+
+// FAQ Data
+const faqItems = [
+  {
+    question: "1. Why use an ADShift Agency Account?",
+    answer: "ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",
+    isOpen: true
+  },
+  {
+    question: "2. What does it cost to use a Google Ads Agency account?",
+    answer: "ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",
+    isOpen: true
+  },
+  {
+    question: "3. Which payment methods are supported?",
+    answer: "We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
+    isOpen: true
+  },
+  {
+    question: "4. How quickly can I get started?",
+    answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
+    isOpen: true
+  },
+  {
+    question: "5. What level of support do you provide?",
+    answer: "Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",
+    isOpen: true
+  },
+  {
+    question: "6. What happens if an advertising account is suspended or banned?",
+    answer: "If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",
+    isOpen: true
+  },
+  {
+    question: "7. How quickly can I get started?",
+    answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
+    isOpen: true
+  }
+];
+
+// FAQ Component Logic
+const faqComponent = document.querySelector('#faq-component');
+if (faqComponent) {
+  faqComponent.innerHTML = createFaqSection("FAQ", faqItems);
 }
 

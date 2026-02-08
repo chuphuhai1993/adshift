@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - ADShift</title>
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col font-['Space_Grotesk']">
+    <div id="header-placeholder"></div>
+ 
+    <main>
+        <!-- Hero Section -->
+        <section class="relative gradient-secondary overflow-hidden pt-32 pb-20">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="inline-flex items-center py-1 px-4 bg-white/80 rounded-full border border-white mb-6">
+                    <img src="assets/our_work.svg" alt="Our work" class="w-5 h-5 mr-2">
+                    <span class="text-gray-900">Our work</span>
+                </div>
+                
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Discover Real Success Stories with ADShift</h1>
+                </div>
+            </div>
+            
+            <!-- Decorative Image -->
+            <div class="absolute top-0 right-0 h-full w-1/2 md:w-1/3 lg:w-1/4 pointer-events-none">
+                 <img src="assets/ADShift_decorative.png" class="object-cover w-full h-full opacity-80" alt="Decoration">
+            </div>
+        </section>
+
+        <!-- Featured Case Study -->
+        <section class="pb-12 px-4 mt-8 relative z-20">
+            <div class="container mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 p-6 md:p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <!-- Left Content -->
+                        <div class="space-y-6">
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Kyna English</h2>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Maximize your success while offering exclusive benefits that help your network grow with cutting-edge advertising solutions
+                                </p>
+                            </div>
+
+                            <!-- Stats Grid -->
+                            <div class="grid grid-cols-2 gap-6 py-4">
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <div class="text-3xl font-bold text-gradient">220N</div>
+                                    <div class="text-sm text-gray-500">Click</div>
+                                </div>
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <div class="text-3xl font-bold text-gradient">627N</div>
+                                    <div class="text-sm text-gray-500">Impressions</div>
+                                </div>
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <div class="text-3xl font-bold text-gradient">1,70 $</div>
+                                    <div class="text-sm text-gray-500">CPC Avg</div>
+                                </div>
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <div class="text-3xl font-bold text-gradient">375N $</div>
+                                    <div class="text-sm text-gray-500">Expense</div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-md">
+                                View Case Study
+                            </button>
+                        </div>
+
+                        <!-- Right Image -->
+                        <div class="relative bg-gray-50 rounded-2xl h-64 lg:h-full min-h-[300px] flex items-center justify-center overflow-hidden group">
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-medium text-gray-600">Game</span>
+                            <!-- Placeholder for Case Study Image -->
+                            <div class="text-center p-8">
+                                <div class="bg-white p-4 rounded-xl shadow-sm inline-block mb-4">
+                                    <img src="assets/logo_partner_tiktok.png" class="h-8 md:h-12 w-auto object-contain" alt="Partner Logo">
+                                </div>
+                            </div>
+                            <img src="assets/our_case.png" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity" alt="Case Study Background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters & Grid -->
+        <section class="py-12 px-4">
+            <div class="container mx-auto">
+                <!-- Filters -->
+                <div class="flex flex-wrap gap-4 mb-10">
+                    <div class="relative">
+                        <select class="appearance-none bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 pl-5 pr-10 rounded-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Industry</option>
+                            <option>E-commerce</option>
+                            <option>Education</option>
+                            <option>Game</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <select class="appearance-none bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 pl-5 pr-10 rounded-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Services</option>
+                            <option>Google Ads</option>
+                            <option>Facebook Ads</option>
+                            <option>TikTok Ads</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid -->
+                <div id="case-study-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cards will be injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's talk Section -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto gradient-secondary rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                <div class="relative z-10 w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gradient mb-8">Let’s talk about your growth journey!</h2>
+                    <button class="btn btn-primary btn-lg">
+                        <span>Get In Touch</span>
+                        <img src="assets/icon_arrow_btn.svg" class="h-5 ml-2">
+                    </button>
+                </div>
+
+                <!-- Decorative Elements -->
+                <div class="absolute right-0 bottom-0 w-1/2 h-full opacity-50 pointer-events-none hidden md:block">
+                    <div
+                        class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                    <div
+                        class="absolute bottom-[10%] right-[20%] w-[300px] h-[300px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

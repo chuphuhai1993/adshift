@@ -3,16 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Partner - Dự án HTML Tailwind</title>
-    <link href="./src/style.css" rel="stylesheet"></head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
+    <title>Partner - ADShift</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white min-h-screen flex flex-col font-['Space_Grotesk']">
     <div id="header-placeholder"></div>
 
-    <main class="container mx-auto p-4 flex-grow pt-32">
-        <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
-            <h1 class="text-3xl font-bold mb-6 text-gray-800">Our Partners</h1>
-            <p class="text-gray-600 mb-8">We work with the best in the industry.</p>
-        </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/bg_404.jpg" alt="Background" class="w-full h-full object-cover">
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <div class="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-blue-100 rounded-full px-4 py-1.5 mb-8">
+                    <img src="assets/our_partner.svg" alt="Our Partner" class="w-4 h-4">
+                    <span class="text-sm font-medium text-gray-600">Our Partner</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 max-w-4xl mx-auto leading-tight">
+                    Grow your business with ADShift's certified partners
+                </h1>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button class="w-60 btn btn-primary btn-lg px-2">
+                        Explore now
+                    </button>
+                    <button class="w-60 btn btn-secondary btn-lg px-2">
+                        Become our partner
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Listing Section -->
+        <section class="py-20 bg-gray-50/50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <h2 class="text-3xl font-bold text-gray-900">See Who Growing With Us</h2>
+                    
+                    <div class="bg-white p-1 rounded-full border border-gray-100 inline-flex">
+                        <button class="px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-medium shadow-sm">All</button>
+                        <button class="px-6 py-2 rounded-full text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors">Marketing Partner</button>
+                        <button class="px-6 py-2 rounded-full text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors">Strategic Partner</button>
+                    </div>
+                </div>
+
+                <div id="partner-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="mb-12">
+                    <div class="flex items-center">
+                        <img src="assets/icon_title.svg" class="h-5 mr-2">
+                        <span class="text-md text-black opacity-80 tracking-wider">Our Solutions</span>
+                    </div>
+                    <h2 class="text-3xl md:text-3xl font-bold text-gray-900 my-2">
+                        Empower your clients with exclusive tools and premium advertising solutions
+                    </h2>
+                    <p class="text-gray-600">
+                        Maximize your success while offering exclusive benefits that keep your network grow with exciting, edge-optimizing solutions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Early Access to Beta Features</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Unlock new TikTok & Google tools before they are available to the public, keeping you ahead.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-2.svg" class="w-10 h-10" alt="Priority Support">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Priority Advertising Support</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Get direct help with ad suspensions and account issues to minimize downtime and maximize results.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-3.svg" class="w-10 h-10" alt="Scalable Solutions">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Scalable Ad Solutions</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Manage multiple ad accounts and flexible budgets with ease, ensuring campaigns scale efficiently.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-4.svg" class="w-10 h-10" alt="Revenue Opportunities">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Lucrative Revenue Opportunities</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Earn commissions, cashback, and bonuses while delivering greater value to your clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="">
+            <div
+                class="container mx-auto relative z-10 px-20 py-20 mb-20 rounded-3xl bg-gradient-to-b from-[#FFFFFF] via-[#8DBCFC] to-[#69F0FC] z-0 text-center">
+
+                <h2 class="text-3xl md:text-3xl font-bold mt-2 mb-4">All types of Businesses can work with us.</h2>
+                <span class="text-md text-black/60 tracking-wider">We partner with all various types of businesses in the world, no matter what industry or country you are in. You can be our Marketing Partner, Strategic Partner, or both.</span>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 bg-white/40 backdrop-blur-md mt-12 rounded-2xl p-4 md:p-6 shadow-lg border border-white/50 text-left flex flex-col md:flex-row gap-8 items-start">
+                        <div>
+                            <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-4">
+                                <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">1. Marketing Partners</h4>
+                            <p class="text-gray-600 text-md mb-8 leading-relaxed">
+                                Team up on co-branded content, webinars, social media campaigns, guest blogs, ebooks, and seasonal promotions
+                            </p>
+                            <button class="btn btn-secondary btn-md">
+                                <span>Strategy Call</span>
+                                <img src="assets/icon_arrow_btn.svg" class="h-5 ml-2 brightness-0">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-white/40 backdrop-blur-md mt-12 rounded-2xl px-4 md:p-6 shadow-lg border border-white/50 text-left flex flex-col md:flex-row gap-8 items-start">
+                        <div>
+                            <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-4">
+                                <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">2. Strategic Partners</h4>
+                            <p class="text-gray-600 text-md leading-relaxed mb-8">
+                                Become our agency at your country and get reliable ad solutions, direct support, and exclusive tools to scale your clients' campaigns seamlessly.
+                            </p>
+                            <button class="btn btn-secondary btn-md">
+                                <span>Strategy Call</span>
+                                <img src="assets/icon_arrow_btn.svg" class="h-5 ml-2 brightness-0">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Partner Section -->
+        <section class="py-20 relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-100">
+            <!-- Decorative Background Image -->
+            <div class="absolute top-0 right-2 h-full w-1/2 pointer-events-none">
+                <img src="assets/ADShift_decorative.png" alt="" class="w-full h-full object-cover object-left opacity-60 mix-blend-multiply">
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10"> 
+                <div class="mb-16">
+                    <div class="flex items-center">
+                        <img src="assets/icon_title.svg" class="h-5 mr-2">
+                        <span class="text-md text-black opacity-80 tracking-wider">Joining is easy</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2">How to Partner with Us</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <div class="hidden md:block absolute top-4 w-[calc(100%-3.5rem)] h-0.5 gradient-primary"></div>
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 1</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Apply</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Fill out our quick partnership application.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 2</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Connect</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Hop on a call with our team to explore how we can work together.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 3</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Finalize</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Finalize your partnership agreement and get access to exclusive resources.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 4</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Launch</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Start scaling your business with our tools and support or collaborate with us in marketing activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto gradient-secondary rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                <div class="relative z-10 max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gradient mb-4">Grow your business today!</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Gain exclusive benefits, collaborate on initiatives, reach a global audience, and explore numerous opportunities!
+                    </p>
+                    <button class="btn btn-primary btn-lg">
+                        <span>Get In Touch</span>
+                        <img src="assets/icon_arrow_btn.svg" class="h-5 ml-2">
+                    </button>
+                </div>
+
+                <!-- Decorative Elements -->
+                <div class="absolute right-0 bottom-0 w-1/2 h-full opacity-50 pointer-events-none hidden md:block">
+                    <div
+                        class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                    <div
+                        class="absolute bottom-[10%] right-[20%] w-[300px] h-[300px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <div id="footer-placeholder"></div>
