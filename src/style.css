@@ -142,11 +142,11 @@
   }
 
   .btn-md {
-    @apply h-[48px] px-[24px] py-[12px] text-sm rounded-2xl;
+    @apply h-[48px] px-[16px] py-[12px] text-sm rounded-2xl;
   }
 
   .btn-lg {
-    @apply h-[56px] px-[40px] py-[16px] text-lg rounded-2xl;
+    @apply h-[56px] px-[24px] py-[16px] text-lg rounded-2xl;
   }
 
   @keyframes scroll {

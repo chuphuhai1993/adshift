@@ -64,6 +64,20 @@ if (headerPlaceholder) {
 const simpleHeaderPlaceholder = document.querySelector('#simple-header-placeholder');
 if (simpleHeaderPlaceholder) {
   simpleHeaderPlaceholder.innerHTML = simpleHeaderHtml;
+
+  const simpleHeader = document.getElementById('simple-header');
+  if (simpleHeader) {
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        simpleHeader.classList.add('-translate-y-full');
+      } else {
+        simpleHeader.classList.remove('-translate-y-full');
+      }
+      lastScrollY = window.scrollY;
+    });
+  }
 }
 
 const footerPlaceholder = document.querySelector('#footer-placeholder');
@@ -127,6 +141,32 @@ if (testimonialsElement) {
   testimonialsElement.innerHTML = testimonialsHtml;
 }
 
+const partnerGrid = document.querySelector('#partner-grid');
+if (partnerGrid) {
+  const partners = [
+    {
+      type: 'Marketing Partner',
+      name: 'Google Ads',
+      description: 'Strategic partner for search and display advertising solutions, providing cutting-edge tools and insights to maximize campaign performance.',
+      logoHtml: '<img src="assets/google_logo_11.svg" class="h-8" alt="Google Ads">'
+    },
+    {
+      type: 'Marketing Partner',
+      name: 'Meta Ads',
+      description: 'Official partner for social media marketing across Facebook and Instagram platforms, helping businesses reach their target audience effectively.',
+      logoHtml: '<i class="fab fa-facebook text-blue-600 text-3xl"></i>'
+    },
+    {
+      type: 'Strategic Partner',
+      name: 'TikTok Ads',
+      description: 'Specialized agency partner for short-form video advertising and creative strategy on the TikTok platform.',
+      logoHtml: '<i class="fab fa-tiktok text-black text-3xl"></i>'
+    }
+  ];
+
+  partnerGrid.innerHTML = partners.map(partner => createPartnerCard(partner)).join('');
+}
+
 // Table of Content Toggle
 const tocToggle = document.querySelector('#toc-toggle');
 const tocContent = document.querySelector('#toc-content');
@@ -166,6 +206,62 @@ if (editBtn && modal) {
       toggleModal(false);
     });
   }
+}
+
+// Order Info Modal Logic (Payment Step 2)
+const editOrderBtn = document.getElementById('edit-order-info-btn');
+const orderModal = document.getElementById('order-info-modal');
+const saveOrderBtn = document.getElementById('save-order-info-btn');
+const cancelOrderBtn = document.getElementById('cancel-order-info-btn');
+const closeOrderBtn = document.getElementById('close-order-modal-btn');
+const orderBackdrop = document.getElementById('order-modal-backdrop');
+
+if (editOrderBtn && orderModal) {
+  const toggleOrderModal = (show) => {
+    if (show) {
+      orderModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    } else {
+      orderModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  };
+
+  editOrderBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleOrderModal(true);
+  });
+  
+  if (cancelOrderBtn) cancelOrderBtn.addEventListener('click', () => toggleOrderModal(false));
+  if (closeOrderBtn) closeOrderBtn.addEventListener('click', () => toggleOrderModal(false));
+  if (orderBackdrop) orderBackdrop.addEventListener('click', () => toggleOrderModal(false));
+  
+  if (saveOrderBtn) {
+    saveOrderBtn.addEventListener('click', () => {
+      // Logic to update UI with new values could go here
+      toggleOrderModal(false);
+    });
+  }
+}
+
+// Payment Page Toggle Logic
+const toggleTkqcBtn = document.getElementById('toggle-tkqc-btn');
+const tkqcDetails = document.getElementById('tkqc-details');
+const toggleIcon = document.getElementById('toggle-icon');
+
+if (toggleTkqcBtn && tkqcDetails && toggleIcon) {
+  toggleTkqcBtn.addEventListener('click', () => {
+    const isHidden = tkqcDetails.classList.contains('hidden');
+    if (isHidden) {
+      tkqcDetails.classList.remove('hidden');
+      toggleIcon.classList.remove('rotate-180');
+      toggleTkqcBtn.querySelector('span').textContent = 'Đóng';
+    } else {
+      tkqcDetails.classList.add('hidden');
+      toggleIcon.classList.add('rotate-180');
+      toggleTkqcBtn.querySelector('span').textContent = 'Mở chi tiết';
+    }
+  });
 }
 
 function initStatsAnimation() {
@@ -256,5 +352,63 @@ const faqItems = [
 const faqComponent = document.querySelector('#faq-component');
 if (faqComponent) {
   faqComponent.innerHTML = createFaqSection("FAQ", faqItems);
+}
+
+// Order Information Quantity Logic
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.btn-increase')) {
+    const input = e.target.closest('.flex').querySelector('.quantity-input');
+    input.value = parseInt(input.value) + 1;
+  }
+  if (e.target.closest('.btn-decrease')) {
+    const input = e.target.closest('.flex').querySelector('.quantity-input');
+    const currentValue = parseInt(input.value);
+    if (currentValue > 0) {
+      input.value = currentValue - 1;
+    }
+  }
+});
+
+// Payment Method Toggle Logic
+const paymentRadios = document.querySelectorAll('.payment-radio');
+const cardForm = document.getElementById('card-form');
+const usdtForm = document.getElementById('usdt-form');
+
+if (paymentRadios.length > 0) {
+  paymentRadios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      const value = e.target.value;
+      
+      // Hide all details first
+      if (cardForm) cardForm.classList.add('hidden');
+      if (usdtForm) usdtForm.classList.add('hidden');
+      
+      // Show selected details
+      if (value === 'card' && cardForm) {
+        cardForm.classList.remove('hidden');
+      } else if (value === 'usdt' && usdtForm) {
+        usdtForm.classList.remove('hidden');
+      }
+    });
+  });
+}
+
+// USDT Address Copy Functionality
+const copyBtn = document.querySelector('#usdt-form button');
+if (copyBtn) {
+  copyBtn.addEventListener('click', () => {
+    const input = document.querySelector('#usdt-form input');
+    if (input) {
+      input.select();
+      document.execCommand('copy');
+      
+      // Optional: Visual feedback
+      const originalIcon = copyBtn.innerHTML;
+      copyBtn.innerHTML = '<svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+      setTimeout(() => {
+        copyBtn.innerHTML = originalIcon;
+      }, 2000);
+    }
+  });
 }
 
