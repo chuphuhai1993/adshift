@@ -1,4 +1,4 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))a(t);new MutationObserver(t=>{for(const e of t)if(e.type==="childList")for(const l of e.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&a(l)}).observe(document,{childList:!0,subtree:!0});function i(t){const e={};return t.integrity&&(e.integrity=t.integrity),t.referrerPolicy&&(e.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?e.credentials="include":t.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function a(t){if(t.ep)return;t.ep=!0;const e=i(t);fetch(t.href,e)}})();const G=`<header class="fixed top-0 left-0 right-0 z-50 p-4">
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const n of s)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function a(s){const n={};return s.integrity&&(n.integrity=s.integrity),s.referrerPolicy&&(n.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?n.credentials="include":s.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(s){if(s.ep)return;s.ep=!0;const n=a(s);fetch(s.href,n)}})();const ne=`<header class="fixed top-0 left-0 right-0 z-50 p-4">
     <div class="container mx-auto relative px-6 py-3 flex justify-between items-center">
         <!-- Header Background -->
         <div class="absolute inset-0 bg-white/60 backdrop-blur-md rounded-2xl border border-black/10 -z-10"></div>
@@ -184,7 +184,7 @@
              </div>
         </div>
     </div>
-`,z=`<header class="fixed top-0 left-0 right-0 z-50 p-4">
+`,se=`<header id="simple-header" class="fixed top-0 left-0 right-0 z-50 p-4 transition-transform duration-300">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="./" class="flex items-center space-x-2">
             <img src="assets/ADShift_logo_light.svg" alt="ADShift Logo" class="h-8">
@@ -222,7 +222,7 @@
         </nav>
     </div>
 </header>
-`,N=`<footer class="bg-[#F5F6F7] text-gray-600 pt-16 pb-8 border-t border-gray-200 mt-auto">
+`,ae=`<footer class="bg-[#F5F6F7] text-gray-600 pt-16 pb-8 border-t border-gray-200 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <!-- Cột 1: Logo & Slogan -->
@@ -280,7 +280,7 @@
         </div>
     </div>
 </footer>
-`,V=`<!-- Process Section -->
+`,oe=`<!-- Process Section -->
 <section class="py-20 relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-100">
     <!-- Decorative Background Image -->
     <div class="absolute top-0 right-2 h-full w-1/2 pointer-events-none">
@@ -327,7 +327,7 @@
             </div>
         </div>
     </div>
-</section>`,U=`<!-- Testimonials Section -->
+</section>`,ie=`<!-- Testimonials Section -->
 <section class="">
 
     <div
@@ -520,7 +520,7 @@
             </div>
         </div>
     </div>
-</section>`,W=`<section class="py-20">
+</section>`,re=`<section class="py-20">
     <div class="container mx-auto px-4 text-center">
         <div class="flex items-center justify-center">
             <img src="assets/icon_title.svg" class="h-5 mr-2">
@@ -558,7 +558,7 @@
             </div>
         </div>
     </div>
-</section>`,J=`<div class="container mx-auto px-4 relative z-10">
+</section>`,le=`<div class="container mx-auto px-4 relative z-10">
     <div class="mb-12">
         <div class="flex items-center">
             <img src="assets/icon_title.svg" class="h-5 mr-2">
@@ -664,7 +664,7 @@
             </button>
         </div>
     </div>
-</div>`,X=`<section class="py-20 px-4">
+</div>`,ce=`<section class="py-20 px-4">
     <div class="container mx-auto gradient-secondary rounded-3xl p-8 md:p-16 relative overflow-hidden">
         <div class="relative z-10 max-w-2xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gradient mb-4">Ready to Scale Without Limits?</h2>
@@ -688,7 +688,7 @@
             </div>
         </div>
     </div>
-</section>`,r=`<div class="group cursor-pointer">
+</section>`,b=`<div class="group cursor-pointer">
     <div class="h-64 bg-gray-200 rounded-xl overflow-hidden mb-4">
         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Blog" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
     </div>
@@ -698,7 +698,7 @@
         <span>January 10, 2026</span>
     </div>
     <h3 class="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition">How to Improve ROAS in Mobile Games Without Higher UA Costs</h3>
-</div>`,Z=`<a href="#" class="flex gap-4 group">
+</div>`,de=`<a href="#" class="flex gap-4 group">
     <div class="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
         <img src="assets/our_case.png" alt="Post thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
     </div>
@@ -711,7 +711,7 @@
         <h5 class="text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">LTV Mobile Games: How to Calculate & Increase Lifetime Value</h5>
     </div>
 </a>
-`,$=`<div class="flex flex-col sm:flex-row gap-6 items-start pb-8 border-b border-gray-100 last:border-0 last:pb-0">
+`,ue=`<div class="flex flex-col sm:flex-row gap-6 items-start pb-8 border-b border-gray-100 last:border-0 last:pb-0">
     <a href="blog-detail.html" class="w-full sm:w-64 h-48 rounded-2xl overflow-hidden flex-shrink-0 block group">
         <img src="assets/our_case.png" alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
     </a>
@@ -738,4 +738,54 @@
         </p>
     </div>
 </div>
-`,p=document.querySelector("#header-placeholder");if(p){p.innerHTML=G;const s=document.getElementById("mobile-menu-btn"),n=document.getElementById("close-mobile-menu-btn"),i=document.getElementById("mobile-menu"),a=document.querySelectorAll(".mobile-accordion-btn");s&&i&&s.addEventListener("click",()=>{i.classList.remove("hidden"),document.body.style.overflow="hidden"}),n&&i&&n.addEventListener("click",()=>{i.classList.add("hidden"),document.body.style.overflow=""}),a&&a.forEach(t=>{t.addEventListener("click",()=>{t.classList.toggle("active");const e=t.nextElementSibling;e&&e.classList.toggle("hidden")})})}const x=document.querySelector("#simple-header-placeholder");x&&(x.innerHTML=z);const h=document.querySelector("#footer-placeholder");h&&(h.innerHTML=N);const f=document.querySelector("#solutions-component");f&&(f.innerHTML=J);const v=document.querySelector("#post-list-main-page");v&&(v.innerHTML=r.repeat(3));const y=document.querySelector("#post-list-blog-page");y&&(y.innerHTML=r.repeat(12));const w=document.querySelector("#post-list-detail-page");w&&(w.innerHTML=r.repeat(3));const k=document.querySelector("#post-sidebar-list-detail-page");k&&(k.innerHTML=Z.repeat(3));const A=document.querySelector("#author-post-list");A&&(A.innerHTML=$.repeat(5));const E=document.querySelector("#cta-component");E&&(E.innerHTML=X);const S=document.querySelector("#process-component");S&&(S.innerHTML=V);const M=document.querySelector("#stats-component");M&&(M.innerHTML=W,K());const L=document.querySelector("#testimonials-component");L&&(L.innerHTML=U);const T=document.querySelector("#toc-toggle"),j=document.querySelector("#toc-content"),B=document.querySelector("#toc-icon");T&&j&&B&&T.addEventListener("click",()=>{j.classList.toggle("hidden"),B.classList.toggle("rotate-180")});const C=document.getElementById("edit-customer-info-btn"),o=document.getElementById("customer-info-modal"),D=document.getElementById("save-customer-info-btn"),H=document.getElementById("cancel-customer-info-btn"),_=document.getElementById("modal-backdrop");if(C&&o){const s=n=>{n?o.classList.remove("hidden"):o.classList.add("hidden")};C.addEventListener("click",n=>{n.preventDefault(),s(!0)}),H&&H.addEventListener("click",()=>s(!1)),_&&_.addEventListener("click",()=>s(!1)),D&&D.addEventListener("click",()=>{s(!1)})}function K(){const s=new IntersectionObserver(i=>{i.forEach(a=>{a.isIntersecting&&(a.target.querySelectorAll(".js-counter").forEach(e=>{const l=parseFloat(e.getAttribute("data-target")),c=e.getAttribute("data-prefix")||"",d=e.getAttribute("data-suffix")||"",u=parseInt(e.getAttribute("data-decimals")||"0"),I=2e3,m=0,P=performance.now();function g(F){const R=F-P,b=Math.min(R/I,1),O=1-Math.pow(1-b,4),q=m+(l-m)*O;e.innerText=c+q.toFixed(u)+d,b<1?requestAnimationFrame(g):e.innerText=c+l.toFixed(u)+d}requestAnimationFrame(g)}),s.unobserve(a.target))})},{threshold:.2}),n=document.querySelector("#stats-component");n&&s.observe(n)}
+`;function me(e){return`
+    <div class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all group overflow-hidden flex flex-col">
+        <div class="bg-gray-50 p-8 h-56 flex items-center justify-center relative">
+            <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded-2xl border border-gray-100  z-10">
+                <span class="text-xs font-bold text-gray-700">${e.type}</span>
+            </div>
+            <div class="flex items-center gap-3">
+                ${e.logoHtml}
+                <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide">${e.name}</span>
+            </div>
+        </div>
+        <div class="p-6 pt-4 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">${e.name}</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-8 line-clamp-3">
+                ${e.description}
+            </p>
+            <button class="btn btn-secondary btn-md w-full">
+                Learn more
+            </button>
+        </div>
+    </div>
+  `}function pe(e,t,a=!1){return`
+        <details class="group mb-6" ${a?"open":""}>
+            <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                <span>${e}</span>
+                <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="20" shape-rendering="geometricPrecision"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" viewBox="0 0 20 20" width="20">
+                        <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                </span>
+            </summary>
+            <p class="text-gray-600 mt-3 pr-10 group-open:animate-fadeIn text-sm leading-relaxed">
+                ${t}
+            </p>
+        </details>
+    `}function ge(e,t){const a=t.map(o=>pe(o.question,o.answer,o.isOpen)).join("");return`
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="space-y-4">
+                    <div class="bg-[#F5F6F7] rounded-3xl p-6 border border-[#E7E8EA]">
+                        <div class="pb-6 mb-8 border-b border-[#E7E8EA]">
+                            <h2 class="text-3xl font-bold text-gray-900 ">${e}</h2>
+                        </div>
+                        ${a}
+                    </div>
+                </div>
+            </div>
+        </section>
+    `}const k=document.querySelector("#header-placeholder");if(k){k.innerHTML=ne;const e=document.getElementById("mobile-menu-btn"),t=document.getElementById("close-mobile-menu-btn"),a=document.getElementById("mobile-menu"),o=document.querySelectorAll(".mobile-accordion-btn");e&&a&&e.addEventListener("click",()=>{a.classList.remove("hidden"),document.body.style.overflow="hidden"}),t&&a&&t.addEventListener("click",()=>{a.classList.add("hidden"),document.body.style.overflow=""}),o&&o.forEach(s=>{s.addEventListener("click",()=>{s.classList.toggle("active");const n=s.nextElementSibling;n&&n.classList.toggle("hidden")})})}const E=document.querySelector("#simple-header-placeholder");if(E){E.innerHTML=se;const e=document.getElementById("simple-header");e&&window.addEventListener("scroll",()=>{window.scrollY>50?e.classList.add("-translate-y-full"):e.classList.remove("-translate-y-full")})}const A=document.querySelector("#footer-placeholder");A&&(A.innerHTML=ae);const S=document.querySelector("#solutions-component");S&&(S.innerHTML=le);const L=document.querySelector("#post-list-main-page");L&&(L.innerHTML=b.repeat(3));const M=document.querySelector("#post-list-blog-page");M&&(M.innerHTML=b.repeat(12));const T=document.querySelector("#post-list-detail-page");T&&(T.innerHTML=b.repeat(3));const B=document.querySelector("#post-sidebar-list-detail-page");B&&(B.innerHTML=de.repeat(3));const j=document.querySelector("#author-post-list");j&&(j.innerHTML=ue.repeat(5));const I=document.querySelector("#cta-component");I&&(I.innerHTML=ce);const q=document.querySelector("#process-component");q&&(q.innerHTML=oe);const H=document.querySelector("#stats-component");H&&(H.innerHTML=re,be());const C=document.querySelector("#testimonials-component");C&&(C.innerHTML=ie);const D=document.querySelector("#partner-grid");if(D){const e=[{type:"Marketing Partner",name:"Google Ads",description:"Strategic partner for search and display advertising solutions, providing cutting-edge tools and insights to maximize campaign performance.",logoHtml:'<img src="assets/google_logo_11.svg" class="h-8" alt="Google Ads">'},{type:"Marketing Partner",name:"Meta Ads",description:"Official partner for social media marketing across Facebook and Instagram platforms, helping businesses reach their target audience effectively.",logoHtml:'<i class="fab fa-facebook text-blue-600 text-3xl"></i>'},{type:"Strategic Partner",name:"TikTok Ads",description:"Specialized agency partner for short-form video advertising and creative strategy on the TikTok platform.",logoHtml:'<i class="fab fa-tiktok text-black text-3xl"></i>'}];D.innerHTML=e.map(t=>me(t)).join("")}const _=document.querySelector("#toc-toggle"),O=document.querySelector("#toc-content"),F=document.querySelector("#toc-icon");_&&O&&F&&_.addEventListener("click",()=>{O.classList.toggle("hidden"),F.classList.toggle("rotate-180")});const P=document.getElementById("edit-customer-info-btn"),m=document.getElementById("customer-info-modal"),R=document.getElementById("save-customer-info-btn"),G=document.getElementById("cancel-customer-info-btn"),z=document.getElementById("modal-backdrop");if(P&&m){const e=t=>{t?m.classList.remove("hidden"):m.classList.add("hidden")};P.addEventListener("click",t=>{t.preventDefault(),e(!0)}),G&&G.addEventListener("click",()=>e(!1)),z&&z.addEventListener("click",()=>e(!1)),R&&R.addEventListener("click",()=>{e(!1)})}const W=document.getElementById("edit-order-info-btn"),p=document.getElementById("order-info-modal"),N=document.getElementById("save-order-info-btn"),$=document.getElementById("cancel-order-info-btn"),V=document.getElementById("close-order-modal-btn"),U=document.getElementById("order-modal-backdrop");if(W&&p){const e=t=>{t?(p.classList.remove("hidden"),document.body.style.overflow="hidden"):(p.classList.add("hidden"),document.body.style.overflow="")};W.addEventListener("click",t=>{t.preventDefault(),e(!0)}),$&&$.addEventListener("click",()=>e(!1)),V&&V.addEventListener("click",()=>e(!1)),U&&U.addEventListener("click",()=>e(!1)),N&&N.addEventListener("click",()=>{e(!1)})}const l=document.getElementById("toggle-tkqc-btn"),c=document.getElementById("tkqc-details"),g=document.getElementById("toggle-icon");l&&c&&g&&l.addEventListener("click",()=>{c.classList.contains("hidden")?(c.classList.remove("hidden"),g.classList.remove("rotate-180"),l.querySelector("span").textContent="Đóng"):(c.classList.add("hidden"),g.classList.add("rotate-180"),l.querySelector("span").textContent="Mở chi tiết")});function be(){const e=new IntersectionObserver(a=>{a.forEach(o=>{o.isIntersecting&&(o.target.querySelectorAll(".js-counter").forEach(n=>{const i=parseFloat(n.getAttribute("data-target")),h=n.getAttribute("data-prefix")||"",f=n.getAttribute("data-suffix")||"",x=parseInt(n.getAttribute("data-decimals")||"0"),Y=2e3,v=0,Z=performance.now();function y(K){const Q=K-Z,w=Math.min(Q/Y,1),ee=1-Math.pow(1-w,4),te=v+(i-v)*ee;n.innerText=h+te.toFixed(x)+f,w<1?requestAnimationFrame(y):n.innerText=h+i.toFixed(x)+f}requestAnimationFrame(y)}),e.unobserve(o.target))})},{threshold:.2}),t=document.querySelector("#stats-component");t&&e.observe(t)}const he=[{question:"1. Why use an ADShift Agency Account?",answer:"ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",isOpen:!0},{question:"2. What does it cost to use a Google Ads Agency account?",answer:"ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",isOpen:!0},{question:"3. Which payment methods are supported?",answer:"We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",isOpen:!0},{question:"4. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!0},{question:"5. What level of support do you provide?",answer:"Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",isOpen:!0},{question:"6. What happens if an advertising account is suspended or banned?",answer:"If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",isOpen:!0},{question:"7. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!0}],J=document.querySelector("#faq-component");J&&(J.innerHTML=ge("FAQ",he));document.addEventListener("click",e=>{if(e.target.closest(".btn-increase")){const t=e.target.closest(".flex").querySelector(".quantity-input");t.value=parseInt(t.value)+1}if(e.target.closest(".btn-decrease")){const t=e.target.closest(".flex").querySelector(".quantity-input"),a=parseInt(t.value);a>0&&(t.value=a-1)}});const X=document.querySelectorAll(".payment-radio"),d=document.getElementById("card-form"),u=document.getElementById("usdt-form");X.length>0&&X.forEach(e=>{e.addEventListener("change",t=>{const a=t.target.value;d&&d.classList.add("hidden"),u&&u.classList.add("hidden"),a==="card"&&d?d.classList.remove("hidden"):a==="usdt"&&u&&u.classList.remove("hidden")})});const r=document.querySelector("#usdt-form button");r&&r.addEventListener("click",()=>{const e=document.querySelector("#usdt-form input");if(e){e.select(),document.execCommand("copy");const t=r.innerHTML;r.innerHTML='<svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>',setTimeout(()=>{r.innerHTML=t},2e3)}});

@@ -3,17 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Partner - Dự án HTML Tailwind</title>  <script type="module" crossorigin src="./assets/main-CmrQRqqj.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-Ba9kEF7m.css">
+    <title>Partner - ADShift</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/main-DXXLGHYo.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BxkoCjOD.css">
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
+<body class="bg-white min-h-screen flex flex-col font-['Space_Grotesk']">
     <div id="header-placeholder"></div>
 
-    <main class="container mx-auto p-4 flex-grow pt-32">
-        <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
-            <h1 class="text-3xl font-bold mb-6 text-gray-800">Our Partners</h1>
-            <p class="text-gray-600 mb-8">We work with the best in the industry.</p>
-        </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="./assets/bg_404-rBJEzCtd.jpg" alt="Background" class="w-full h-full object-cover">
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <div class="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-blue-100 rounded-full px-4 py-1.5 mb-8">
+                    <img src="assets/our_partner.svg" alt="Our Partner" class="w-4 h-4">
+                    <span class="text-sm font-medium text-gray-600">Our Partner</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 max-w-4xl mx-auto leading-tight">
+                    Grow your business with ADShift's certified partners
+                </h1>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button class="w-60 btn btn-primary btn-lg px-2">
+                        Explore now
+                    </button>
+                    <button class="w-60 btn btn-secondary btn-lg px-2">
+                        Become our partner
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Listing Section -->
+        <section class="py-20 bg-gray-50/50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <h2 class="text-3xl font-bold text-gray-900">See Who Growing With Us</h2>
+                    
+                    <div class="bg-white p-1 rounded-full border border-gray-100 inline-flex">
+                        <button class="px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-medium shadow-sm">All</button>
+                        <button class="px-6 py-2 rounded-full text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors">Marketing Partner</button>
+                        <button class="px-6 py-2 rounded-full text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors">Strategic Partner</button>
+                    </div>
+                </div>
+
+                <div id="partner-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="mb-12">
+                    <div class="flex items-center">
+                        <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.6208%2012.463C15.7161%2012.5773%2015.7622%2012.7248%2015.7491%2012.873C15.7359%2013.0213%2015.6645%2013.1583%2015.5505%2013.254C14.3298%2014.2658%2013.24%2014.6251%2012.2458%2014.6251C10.9394%2014.6251%209.7975%2014.005%208.73508%2013.4298C6.95266%2012.4623%205.41352%2011.627%203.17547%2013.4818C3.11872%2013.5297%203.05306%2013.5659%202.98228%2013.5882C2.91149%2013.6106%202.83697%2013.6187%202.76303%2013.6121C2.68908%2013.6056%202.61717%2013.5844%202.55143%2013.5499C2.4857%2013.5154%202.42744%2013.4683%202.38002%2013.4112C2.3326%2013.354%202.29695%2013.2881%202.27514%2013.2171C2.25333%2013.1462%202.24577%2013.0716%202.25292%2012.9977C2.26006%2012.9238%202.28176%2012.8521%202.31677%2012.7866C2.35177%2012.7211%202.39939%2012.6633%202.45688%2012.6163C5.28133%2010.2763%207.40125%2011.4266%209.27227%2012.4419C11.0547%2013.4087%2012.5938%2014.244%2014.8319%2012.3899C14.9464%2012.2955%2015.0936%2012.2503%2015.2414%2012.264C15.3892%2012.2777%2015.5255%2012.3492%2015.6208%2012.463ZM14.8284%208.45519C12.5903%2010.31%2011.0512%209.47472%209.26875%208.50722C7.39774%207.49261%205.27781%206.3423%202.45336%208.6823C2.3399%208.77799%202.26887%208.91465%202.25573%209.0625C2.2426%209.21034%202.28843%209.35739%202.38324%209.47158C2.47805%209.58578%202.61415%209.65788%202.76189%209.67217C2.90963%209.68645%203.05702%209.64176%203.17196%209.54784C5.41%207.693%206.94914%208.52831%208.73156%209.49581C9.79399%2010.0717%2010.9359%2010.6911%2012.2423%2010.6911C13.2365%2010.6911%2014.3263%2010.3318%2015.547%209.32003C15.6044%209.27306%2015.6521%209.21517%2015.6871%209.1497C15.7221%209.08424%2015.7438%209.01249%2015.7509%208.9386C15.7581%208.86471%2015.7505%208.79013%2015.7287%208.71917C15.7069%208.64821%2015.6712%208.58227%2015.6238%208.52516C15.5764%208.46804%2015.5181%208.42087%2015.4524%208.38638C15.3867%208.35188%2015.3147%208.33074%2015.2408%208.32417C15.1669%208.3176%2015.0923%208.32573%2015.0216%208.3481C14.9508%208.37047%2014.8851%208.40662%2014.8284%208.45449V8.45519ZM3.17196%205.61105C5.41%203.75691%206.94914%204.59222%208.73156%205.55902C9.79399%206.13558%2010.9359%206.75433%2012.2423%206.75433C13.2365%206.75433%2014.3263%206.39433%2015.547%205.38324C15.6044%205.33626%2015.6521%205.27837%2015.6871%205.21291C15.7221%205.14744%2015.7438%205.0757%2015.7509%205.0018C15.7581%204.92791%2015.7505%204.85334%2015.7287%204.78238C15.7069%204.71142%2015.6712%204.64548%2015.6238%204.58836C15.5764%204.53124%2015.5181%204.48408%2015.4524%204.44958C15.3867%204.41509%2015.3147%204.39394%2015.2408%204.38737C15.1669%204.3808%2015.0923%204.38894%2015.0216%204.4113C14.9508%204.43367%2014.8851%204.46983%2014.8284%204.51769C12.5903%206.37253%2011.0512%205.53722%209.26875%204.56972C7.39774%203.55652%205.27781%202.40621%202.45336%204.74621C2.39387%204.7925%202.34429%204.85028%202.30757%204.91612C2.27086%204.98195%202.24774%205.0545%202.23961%205.12944C2.23148%205.20438%202.23849%205.28019%202.26024%205.35237C2.28198%205.42455%202.31801%205.49162%202.36619%205.5496C2.41436%205.60758%202.4737%205.65528%202.54067%205.68988C2.60765%205.72448%202.68089%205.74526%202.75605%205.75099C2.83122%205.75672%202.90677%205.74729%202.97821%205.72325C3.04966%205.69921%203.11555%205.66105%203.17196%205.61105Z'%20fill='%23343330'/%3e%3c/svg%3e" class="h-5 mr-2">
+                        <span class="text-md text-black opacity-80 tracking-wider">Our Solutions</span>
+                    </div>
+                    <h2 class="text-3xl md:text-3xl font-bold text-gray-900 my-2">
+                        Empower your clients with exclusive tools and premium advertising solutions
+                    </h2>
+                    <p class="text-gray-600">
+                        Maximize your success while offering exclusive benefits that keep your network grow with exciting, edge-optimizing solutions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Early Access to Beta Features</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Unlock new TikTok & Google tools before they are available to the public, keeping you ahead.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-2.svg" class="w-10 h-10" alt="Priority Support">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Priority Advertising Support</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Get direct help with ad suspensions and account issues to minimize downtime and maximize results.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-3.svg" class="w-10 h-10" alt="Scalable Solutions">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Scalable Ad Solutions</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Manage multiple ad accounts and flexible budgets with ease, ensuring campaigns scale efficiently.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="p-8 rounded-3xl bg-white card-shadow group">
+                        <div class="gradient-secondary w-12 h-12 p-2 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                            <img src="assets/partner-4.svg" class="w-10 h-10" alt="Revenue Opportunities">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Lucrative Revenue Opportunities</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Earn commissions, cashback, and bonuses while delivering greater value to your clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="">
+            <div
+                class="container mx-auto relative z-10 px-20 py-20 mb-20 rounded-3xl bg-gradient-to-b from-[#FFFFFF] via-[#8DBCFC] to-[#69F0FC] z-0 text-center">
+
+                <h2 class="text-3xl md:text-3xl font-bold mt-2 mb-4">All types of Businesses can work with us.</h2>
+                <span class="text-md text-black/60 tracking-wider">We partner with all various types of businesses in the world, no matter what industry or country you are in. You can be our Marketing Partner, Strategic Partner, or both.</span>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 bg-white/40 backdrop-blur-md mt-12 rounded-2xl p-4 md:p-6 shadow-lg border border-white/50 text-left flex flex-col md:flex-row gap-8 items-start">
+                        <div>
+                            <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-4">
+                                <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">1. Marketing Partners</h4>
+                            <p class="text-gray-600 text-md mb-8 leading-relaxed">
+                                Team up on co-branded content, webinars, social media campaigns, guest blogs, ebooks, and seasonal promotions
+                            </p>
+                            <button class="btn btn-secondary btn-md">
+                                <span>Strategy Call</span>
+                                <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.5855%209.39779L10.523%2014.4603C10.4174%2014.5658%2010.2743%2014.6251%2010.125%2014.6251C9.97573%2014.6251%209.83258%2014.5658%209.72703%2014.4603C9.62148%2014.3547%209.56219%2014.2116%209.56219%2014.0623C9.56219%2013.9131%209.62148%2013.7699%209.72703%2013.6644L13.8298%209.56232H2.8125C2.66332%209.56232%202.52024%209.50306%202.41475%209.39757C2.30926%209.29208%202.25%209.14901%202.25%208.99982C2.25%208.85064%202.30926%208.70757%202.41475%208.60208C2.52024%208.49659%202.66332%208.43732%202.8125%208.43732H13.8298L9.72703%204.33529C9.62148%204.22975%209.56219%204.08659%209.56219%203.93732C9.56219%203.78806%209.62148%203.6449%209.72703%203.53936C9.83258%203.43381%209.97573%203.37451%2010.125%203.37451C10.2743%203.37451%2010.4174%203.43381%2010.523%203.53936L15.5855%208.60186C15.6378%208.6541%2015.6793%208.71613%2015.7076%208.78442C15.7359%208.85271%2015.7504%208.9259%2015.7504%208.99982C15.7504%209.07375%2015.7359%209.14694%2015.7076%209.21523C15.6793%209.28351%2015.6378%209.34555%2015.5855%209.39779Z'%20fill='white'/%3e%3c/svg%3e" class="h-5 ml-2 brightness-0">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-white/40 backdrop-blur-md mt-12 rounded-2xl px-4 md:p-6 shadow-lg border border-white/50 text-left flex flex-col md:flex-row gap-8 items-start">
+                        <div>
+                            <div class="gradient-secondary w-12 h-12 p-2 rounded-xl flex items-center justify-center mb-4">
+                                <img src="assets/partner-1.svg" class="w-10 h-10" alt="Early Access">
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">2. Strategic Partners</h4>
+                            <p class="text-gray-600 text-md leading-relaxed mb-8">
+                                Become our agency at your country and get reliable ad solutions, direct support, and exclusive tools to scale your clients' campaigns seamlessly.
+                            </p>
+                            <button class="btn btn-secondary btn-md">
+                                <span>Strategy Call</span>
+                                <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.5855%209.39779L10.523%2014.4603C10.4174%2014.5658%2010.2743%2014.6251%2010.125%2014.6251C9.97573%2014.6251%209.83258%2014.5658%209.72703%2014.4603C9.62148%2014.3547%209.56219%2014.2116%209.56219%2014.0623C9.56219%2013.9131%209.62148%2013.7699%209.72703%2013.6644L13.8298%209.56232H2.8125C2.66332%209.56232%202.52024%209.50306%202.41475%209.39757C2.30926%209.29208%202.25%209.14901%202.25%208.99982C2.25%208.85064%202.30926%208.70757%202.41475%208.60208C2.52024%208.49659%202.66332%208.43732%202.8125%208.43732H13.8298L9.72703%204.33529C9.62148%204.22975%209.56219%204.08659%209.56219%203.93732C9.56219%203.78806%209.62148%203.6449%209.72703%203.53936C9.83258%203.43381%209.97573%203.37451%2010.125%203.37451C10.2743%203.37451%2010.4174%203.43381%2010.523%203.53936L15.5855%208.60186C15.6378%208.6541%2015.6793%208.71613%2015.7076%208.78442C15.7359%208.85271%2015.7504%208.9259%2015.7504%208.99982C15.7504%209.07375%2015.7359%209.14694%2015.7076%209.21523C15.6793%209.28351%2015.6378%209.34555%2015.5855%209.39779Z'%20fill='white'/%3e%3c/svg%3e" class="h-5 ml-2 brightness-0">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Partner Section -->
+        <section class="py-20 relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-100">
+            <!-- Decorative Background Image -->
+            <div class="absolute top-0 right-2 h-full w-1/2 pointer-events-none">
+                <img src="./assets/ADShift_decorative-BnCVGJKY.png" alt="" class="w-full h-full object-cover object-left opacity-60 mix-blend-multiply">
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10"> 
+                <div class="mb-16">
+                    <div class="flex items-center">
+                        <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.6208%2012.463C15.7161%2012.5773%2015.7622%2012.7248%2015.7491%2012.873C15.7359%2013.0213%2015.6645%2013.1583%2015.5505%2013.254C14.3298%2014.2658%2013.24%2014.6251%2012.2458%2014.6251C10.9394%2014.6251%209.7975%2014.005%208.73508%2013.4298C6.95266%2012.4623%205.41352%2011.627%203.17547%2013.4818C3.11872%2013.5297%203.05306%2013.5659%202.98228%2013.5882C2.91149%2013.6106%202.83697%2013.6187%202.76303%2013.6121C2.68908%2013.6056%202.61717%2013.5844%202.55143%2013.5499C2.4857%2013.5154%202.42744%2013.4683%202.38002%2013.4112C2.3326%2013.354%202.29695%2013.2881%202.27514%2013.2171C2.25333%2013.1462%202.24577%2013.0716%202.25292%2012.9977C2.26006%2012.9238%202.28176%2012.8521%202.31677%2012.7866C2.35177%2012.7211%202.39939%2012.6633%202.45688%2012.6163C5.28133%2010.2763%207.40125%2011.4266%209.27227%2012.4419C11.0547%2013.4087%2012.5938%2014.244%2014.8319%2012.3899C14.9464%2012.2955%2015.0936%2012.2503%2015.2414%2012.264C15.3892%2012.2777%2015.5255%2012.3492%2015.6208%2012.463ZM14.8284%208.45519C12.5903%2010.31%2011.0512%209.47472%209.26875%208.50722C7.39774%207.49261%205.27781%206.3423%202.45336%208.6823C2.3399%208.77799%202.26887%208.91465%202.25573%209.0625C2.2426%209.21034%202.28843%209.35739%202.38324%209.47158C2.47805%209.58578%202.61415%209.65788%202.76189%209.67217C2.90963%209.68645%203.05702%209.64176%203.17196%209.54784C5.41%207.693%206.94914%208.52831%208.73156%209.49581C9.79399%2010.0717%2010.9359%2010.6911%2012.2423%2010.6911C13.2365%2010.6911%2014.3263%2010.3318%2015.547%209.32003C15.6044%209.27306%2015.6521%209.21517%2015.6871%209.1497C15.7221%209.08424%2015.7438%209.01249%2015.7509%208.9386C15.7581%208.86471%2015.7505%208.79013%2015.7287%208.71917C15.7069%208.64821%2015.6712%208.58227%2015.6238%208.52516C15.5764%208.46804%2015.5181%208.42087%2015.4524%208.38638C15.3867%208.35188%2015.3147%208.33074%2015.2408%208.32417C15.1669%208.3176%2015.0923%208.32573%2015.0216%208.3481C14.9508%208.37047%2014.8851%208.40662%2014.8284%208.45449V8.45519ZM3.17196%205.61105C5.41%203.75691%206.94914%204.59222%208.73156%205.55902C9.79399%206.13558%2010.9359%206.75433%2012.2423%206.75433C13.2365%206.75433%2014.3263%206.39433%2015.547%205.38324C15.6044%205.33626%2015.6521%205.27837%2015.6871%205.21291C15.7221%205.14744%2015.7438%205.0757%2015.7509%205.0018C15.7581%204.92791%2015.7505%204.85334%2015.7287%204.78238C15.7069%204.71142%2015.6712%204.64548%2015.6238%204.58836C15.5764%204.53124%2015.5181%204.48408%2015.4524%204.44958C15.3867%204.41509%2015.3147%204.39394%2015.2408%204.38737C15.1669%204.3808%2015.0923%204.38894%2015.0216%204.4113C14.9508%204.43367%2014.8851%204.46983%2014.8284%204.51769C12.5903%206.37253%2011.0512%205.53722%209.26875%204.56972C7.39774%203.55652%205.27781%202.40621%202.45336%204.74621C2.39387%204.7925%202.34429%204.85028%202.30757%204.91612C2.27086%204.98195%202.24774%205.0545%202.23961%205.12944C2.23148%205.20438%202.23849%205.28019%202.26024%205.35237C2.28198%205.42455%202.31801%205.49162%202.36619%205.5496C2.41436%205.60758%202.4737%205.65528%202.54067%205.68988C2.60765%205.72448%202.68089%205.74526%202.75605%205.75099C2.83122%205.75672%202.90677%205.74729%202.97821%205.72325C3.04966%205.69921%203.11555%205.66105%203.17196%205.61105Z'%20fill='%23343330'/%3e%3c/svg%3e" class="h-5 mr-2">
+                        <span class="text-md text-black opacity-80 tracking-wider">Joining is easy</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2">How to Partner with Us</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <div class="hidden md:block absolute top-4 w-[calc(100%-3.5rem)] h-0.5 gradient-primary"></div>
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 1</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Apply</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Fill out our quick partnership application.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 2</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Connect</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Hop on a call with our team to explore how we can work together.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 3</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Finalize</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Finalize your partnership agreement and get access to exclusive resources.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative">
+                        <div class="w-20 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold mb-4 gradient-primary">Step 4</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Launch</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Start scaling your business with our tools and support or collaborate with us in marketing activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto gradient-secondary rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                <div class="relative z-10 max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gradient mb-4">Grow your business today!</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Gain exclusive benefits, collaborate on initiatives, reach a global audience, and explore numerous opportunities!
+                    </p>
+                    <button class="btn btn-primary btn-lg">
+                        <span>Get In Touch</span>
+                        <img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.5855%209.39779L10.523%2014.4603C10.4174%2014.5658%2010.2743%2014.6251%2010.125%2014.6251C9.97573%2014.6251%209.83258%2014.5658%209.72703%2014.4603C9.62148%2014.3547%209.56219%2014.2116%209.56219%2014.0623C9.56219%2013.9131%209.62148%2013.7699%209.72703%2013.6644L13.8298%209.56232H2.8125C2.66332%209.56232%202.52024%209.50306%202.41475%209.39757C2.30926%209.29208%202.25%209.14901%202.25%208.99982C2.25%208.85064%202.30926%208.70757%202.41475%208.60208C2.52024%208.49659%202.66332%208.43732%202.8125%208.43732H13.8298L9.72703%204.33529C9.62148%204.22975%209.56219%204.08659%209.56219%203.93732C9.56219%203.78806%209.62148%203.6449%209.72703%203.53936C9.83258%203.43381%209.97573%203.37451%2010.125%203.37451C10.2743%203.37451%2010.4174%203.43381%2010.523%203.53936L15.5855%208.60186C15.6378%208.6541%2015.6793%208.71613%2015.7076%208.78442C15.7359%208.85271%2015.7504%208.9259%2015.7504%208.99982C15.7504%209.07375%2015.7359%209.14694%2015.7076%209.21523C15.6793%209.28351%2015.6378%209.34555%2015.5855%209.39779Z'%20fill='white'/%3e%3c/svg%3e" class="h-5 ml-2">
+                    </button>
+                </div>
+
+                <!-- Decorative Elements -->
+                <div class="absolute right-0 bottom-0 w-1/2 h-full opacity-50 pointer-events-none hidden md:block">
+                    <div
+                        class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                    <div
+                        class="absolute bottom-[10%] right-[20%] w-[300px] h-[300px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <div id="footer-placeholder"></div>
