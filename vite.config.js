@@ -14,7 +14,7 @@ export default defineConfig({
         partner: resolve(__dirname, 'partner.html'),
         author: resolve(__dirname, 'author.html'),
         contactUs: resolve(__dirname, 'contact-us.html'),
-        caseStudy: resolve(__dirname, 'case-study.html'),
+        work: resolve(__dirname, 'case-study.html'),
         caseStudyDetail: resolve(__dirname, 'case-study-detail.html'),
         singlePost: resolve(__dirname, 'single-post.html'),
         maintenance: resolve(__dirname, 'maintenance.html'),
