@@ -267,6 +267,33 @@ if (caseStudyGrid) {
   caseStudyGrid.innerHTML = caseStudies.map(study => createCaseStudyCard(study)).join('');
 }
 
+const relatedCaseStudiesGrid = document.querySelector('#related-case-studies-grid');
+if (relatedCaseStudiesGrid) {
+  const related = [
+    {
+      category: 'E-commerce',
+      logo: 'assets/logo_partner_tiktok.png',
+      title: 'Fashion Brand Growth',
+      description: 'Scaled a local fashion brand to international markets using TikTok Shop and strategic creator collaborations.',
+      stats: { cpm: '$2.45', cpa: '$12.20', roas: '4.5x' }
+    },
+    {
+      category: 'Education',
+      logo: 'assets/logo_partner_google.png',
+      title: 'EdTech Enrollment',
+      description: 'Increased student enrollment through targeted Search and YouTube campaigns.',
+      stats: { cpm: '$15.80', cpa: '$45.00', roas: '3.2x' }
+    },
+    {
+      category: 'Game',
+      logo: 'assets/logo_partner_meta.png',
+      title: 'Mobile Game Launch',
+      description: 'Over 1M downloads using Advantage+ campaigns and high-performing creatives.',
+      stats: { cpm: '$5.20', cpa: '$0.85', roas: '2.8x' }
+    }
+  ];
+  relatedCaseStudiesGrid.innerHTML = related.map(study => createCaseStudyCard(study)).join('');
+}
 // Table of Content Toggle
 const tocToggle = document.querySelector('#toc-toggle');
 const tocContent = document.querySelector('#toc-content');
