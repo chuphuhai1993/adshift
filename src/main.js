@@ -102,10 +102,24 @@ if (postListMainPageElement) {
   postListMainPageElement.innerHTML = postItemHtml.repeat(3);
 }
 
-const postListBlogPageElement = document.querySelector('#post-list-blog-page');
-if (postListBlogPageElement) {
-  // Inject 12 cards as example
-  postListBlogPageElement.innerHTML = postItemHtml.repeat(12);
+const postListBlogGoogle = document.querySelector('#post-list-blog-google');
+if (postListBlogGoogle) {
+  postListBlogGoogle.innerHTML = postItemHtml.repeat(6);
+}
+
+const postListBlogMeta = document.querySelector('#post-list-blog-meta');
+if (postListBlogMeta) {
+  postListBlogMeta.innerHTML = postItemHtml.repeat(6);
+}
+
+const postListBlogTiktok = document.querySelector('#post-list-blog-tiktok');
+if (postListBlogTiktok) {
+  postListBlogTiktok.innerHTML = postItemHtml.repeat(6);
+}
+
+const postListBlogBing = document.querySelector('#post-list-blog-bing');
+if (postListBlogBing) {
+  postListBlogBing.innerHTML = postItemHtml.repeat(6);
 }
 
 const postListDetailPageElement = document.querySelector('#post-list-detail-page');
@@ -491,4 +505,3 @@ if (copyBtn) {
     }
   });
 }
-

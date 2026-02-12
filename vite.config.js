@@ -10,6 +10,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         services: resolve(__dirname, 'services.html'),
         blog: resolve(__dirname, 'blog.html'),
+        blogCategory: resolve(__dirname, 'blog-category.html'),
         blogDetail: resolve(__dirname, 'blog-detail.html'),
         partner: resolve(__dirname, 'partner.html'),
         author: resolve(__dirname, 'author.html'),
