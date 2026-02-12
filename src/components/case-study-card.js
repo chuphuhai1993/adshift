@@ -28,10 +28,11 @@ export function createCaseStudyCard(data) {
                     <div class="text-gradient font-bold text-lg">${data.stats.roas}</div>
                 </div>
             </div>
-
-            <button class="w-full btn btn-secondary btn-md">
-                Learn more
-            </button>
+            <a href="case-study-detail.html">
+                <button class="w-full btn btn-secondary btn-md">
+                    <span>Learn more</span>
+                </button>
+            </a>
         </div>
     </div>
   `;
