@@ -148,7 +148,7 @@
                      <svg class="w-4 h-4 transition-transform group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                  </button>
                  <div class="max-h-0 transition-all duration-300 ease-in-out overflow-hidden">
-                     <div class="space-y-4 pb-4 pl-2">
+                     <div class="space-y-4 pb-4">
                          <a href="#" class="block text-gray-600 font-medium">Rent Google agency Ads account</a>
                          <a href="#" class="block text-gray-600 font-medium">Rent Meta agency Ads account</a>
                          <a href="#" class="block text-gray-600 font-medium">Rent Tiktok agency Ads account</a>
@@ -164,7 +164,7 @@
                      <svg class="w-4 h-4 transition-transform group-[.active]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                  </button>
                  <div class="max-h-0 transition-all duration-300 ease-in-out overflow-hidden">
-                     <div class="space-y-4 pb-4 pl-2">
+                     <div class="space-y-4 pb-4">
                          <a href="#" class="block text-gray-600 font-medium">Google Ads</a>
                          <a href="#" class="block text-gray-600 font-medium">Facebook Ads</a>
                          <a href="#" class="block text-gray-600 font-medium">Tiktok Ads</a>
