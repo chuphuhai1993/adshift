@@ -436,49 +436,141 @@ function initStatsAnimation() {
   }
 }
 
-// FAQ Data
-const faqItems = [
-  {
-    question: "1. Why use an ADShift Agency Account?",
-    answer: "ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",
-    isOpen: false
-  },
-  {
-    question: "2. What does it cost to use a Google Ads Agency account?",
-    answer: "ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",
-    isOpen: false
-  },
-  {
-    question: "3. Which payment methods are supported?",
-    answer: "We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
-    isOpen: false
-  },
-  {
-    question: "4. How quickly can I get started?",
-    answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
-    isOpen: false
-  },
-  {
-    question: "5. What level of support do you provide?",
-    answer: "Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",
-    isOpen: false
-  },
-  {
-    question: "6. What happens if an advertising account is suspended or banned?",
-    answer: "If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",
-    isOpen: false
-  },
-  {
-    question: "7. How quickly can I get started?",
-    answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
-    isOpen: false
-  }
-];
+const faqSets = {
+  google: [
+    {
+      question: "1. Why partner with ADShift for Google Ads?",
+      answer: "ADShift combines deep industry expertise, direct media relationships, and localized support to remove common advertising barriers. We help you run compliant, stable, and scalable campaigns built for long-term growth. Beyond accounts, we provide the infrastructure, hands-on support, guidance, and tools you need to succeed — because your success is our success.",
+      isOpen: false
+    },
+    {
+      question: "2. What does it cost to use a Google Ads Agency account?",
+      answer: "ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",
+      isOpen: false
+    },
+    {
+      question: "3. Which payment methods are supported?",
+      answer: "We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
+      isOpen: false
+    },
+    {
+      question: "4. How quickly can I get started?",
+      answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
+      isOpen: false
+    },
+    {
+      question: "5. What level of support do you provide?",
+      answer: "Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",
+      isOpen: false
+    },
+    {
+      question: "6. What happens if an advertising account is suspended or banned?",
+      answer: "If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",
+      isOpen: false
+    }
+  ],
+  meta: [
+    {
+      question: "1. What sets ADShift's Meta agency accounts apart?",
+      answer: "These partner-level Meta accounts are built for scale, allowing advertisers to grow without worrying about spending limits or sudden thresholds.",
+      isOpen: false
+    },
+    {
+      question: "2. How much does it cost to rent a Facebook agency ad account?",
+      answer: "Pricing depends on the service scope and rental terms. Service fees typically start from 3% of your top-up and may vary based on spend volume. We also offer preferential rates for businesses and high-spending clients.",
+      isOpen: false
+    },
+    {
+      question: "3. What payment methods are available?",
+      answer: "ADShift supports multiple payment options for your convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
+      isOpen: false
+    },
+    {
+      question: "4. Can I join as an agency?",
+      answer: "Absolutely. We collaborate with many agencies and provide white-label solutions, enabling you to offer our ad accounts to your own clients. Our Sales Partner program helps you expand your service offerings or launch a new business line with ease. Contact us directly to learn more about partnership benefits.",
+      isOpen: false
+    },
+    {
+      question: "5. How quickly can we get started?",
+      answer: "Once payment is completed, we move fast. Account setup begins within one business day, and we’ll keep you updated throughout the process.",
+      isOpen: false
+    },
+    {
+      question: "6. What level of support will I receive?",
+      answer: "Every ADShift client is assigned a dedicated Account Manager, available seven days a week to assist with questions or issues—ensuring smooth campaign execution and rapid problem resolution.",
+      isOpen: false
+    }
+  ],
+  tiktok: [
+    {
+      question: "1. What makes ADShift's TikTok invoice account unique?",
+      answer: "This is a partner-level TikTok account designed for scale, allowing advertisers to grow freely without worrying about spending caps or threshold limits.",
+      isOpen: false
+    },
+    {
+      question: "2. How much does it cost to rent a TikTok agency ad account?",
+      answer: "Pricing depends on the service scope and applicable taxes. Service fees typically start from around 2% and decrease as your top-up volume increases.",
+      isOpen: false
+    },
+    {
+      question: "3. Which payment methods are supported?",
+      answer: "ADShift accepts multiple payment options for convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
+      isOpen: false
+    },
+    {
+      question: "4. Can I join as an agency?",
+      answer: "Absolutely. We work closely with many agencies and offer white-label solutions, enabling you to resell our ad accounts to your clients. Our Sales Partner program helps you expand your services or launch a new business line with ease. Contact us directly to learn more about partnership benefits.",
+      isOpen: false
+    },
+    {
+      question: "5. How quickly can we get started?",
+      answer: "Once payment is completed, we begin the setup process promptly. Account creation starts within one business day, with regular updates provided throughout.",
+      isOpen: false
+    },
+    {
+      question: "6. What level of support will I receive?",
+      answer: "Every ADShift client is assigned a dedicated Account Manager, available seven days a week to assist with any questions or issues—ensuring smooth campaign performance and fast problem resolution.",
+      isOpen: false
+    }
+  ],
+  bing: [
+    {
+      question: "1. Why should I work with ADShift?",
+      answer: "ADShift combines proven expertise, direct media partnerships, and localized support to remove common advertising barriers. We help you run compliant, stable, and scalable campaigns built for long-term growth. Beyond ad accounts, we provide the infrastructure, guidance, training, and tools you need—because your success drives ours.",
+      isOpen: false
+    },
+    {
+      question: "2. How much does it cost to rent a Bing Ads agency account?",
+      answer: "Our Bing Ads agency accounts start from just 7% of your top-up amount. There are no setup costs or hidden fees, making it a budget-friendly solution for businesses of any size looking to scale efficiently.",
+      isOpen: false
+    },
+    {
+      question: "3. Which payment methods are accepted?",
+      answer: "We support bank transfers, digital banking solutions, and cryptocurrency payments, including USDT.",
+      isOpen: false
+    },
+    {
+      question: "4. How quickly can I get started?",
+      answer: "After completing registration, we move fast. Account setup begins within one business day, and we’ll keep you informed throughout the process.",
+      isOpen: false
+    },
+    {
+      question: "5. What level of support will I receive?",
+      answer: "Every ADShift client is assigned a dedicated Account Manager available seven days a week. Our hands-on support ensures smooth campaign execution and quick resolution of any issues that arise.",
+      isOpen: false
+    }
+  ]
+};
 
 // FAQ Component Logic
 const faqComponent = document.querySelector('#faq-component');
 if (faqComponent) {
-  faqComponent.innerHTML = createFaqSection("FAQ", faqItems);
+  const path = window.location.pathname || '';
+  let key = 'google';
+  if (path.endsWith('services-meta.html')) key = 'meta';
+  else if (path.endsWith('services-tiktok.html')) key = 'tiktok';
+  else if (path.endsWith('services-bing.html')) key = 'bing';
+  faqComponent.innerHTML = createFaqSection("FAQ", faqSets[key]);
 }
 
 // Order Information Quantity Logic

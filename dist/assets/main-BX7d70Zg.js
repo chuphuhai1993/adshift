@@ -25,22 +25,22 @@
                         <div class="relative p-2">
                             <ul class="flex flex-col text-left">
                                 <li>
-                                    <a href="services.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="services-google.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Rent Google agency Ads account
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="services-meta.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Rent Meta agency Ads account
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="services-tiktok.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Rent Tiktok agency Ads account
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="services-bing.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Rent Bing agency Ads account
                                     </a>
                                 </li>
@@ -272,10 +272,10 @@
             <div>
                 <h3 class="font-bold text-gray-900 mb-4">Our services</h3>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="services.html" class="hover:text-blue-600 transition">Rent Google Agency Ads Account</a></li>
-                    <li><a href="services.html" class="hover:text-blue-600 transition">Rent Meta Agency Ads Account</a></li>
-                    <li><a href="services.html" class="hover:text-blue-600 transition">Rent TikTok Agency Ads Account</a></li>
-                    <li><a href="services.html" class="hover:text-blue-600 transition">Rent Bing Agency Ads Account</a></li>
+                    <li><a href="services-google.html" class="hover:text-blue-600 transition">Rent Google Agency Ads Account</a></li>
+                    <li><a href="services-meta.html" class="hover:text-blue-600 transition">Rent Meta Agency Ads Account</a></li>
+                    <li><a href="services-tiktok.html" class="hover:text-blue-600 transition">Rent TikTok Agency Ads Account</a></li>
+                    <li><a href="services-bing.html" class="hover:text-blue-600 transition">Rent Bing Agency Ads Account</a></li>
                 </ul>
             </div>
 

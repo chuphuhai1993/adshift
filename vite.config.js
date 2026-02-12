@@ -8,7 +8,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
-        services: resolve(__dirname, 'services.html'),
+        servicesGoogle: resolve(__dirname, 'services-google.html'),
+        servicesBing: resolve(__dirname, 'services-bing.html'),
+        servicesMeta: resolve(__dirname, 'services-meta.html'),
+        servicesTiktok: resolve(__dirname, 'services-tiktok.html'),
         blog: resolve(__dirname, 'blog.html'),
         blogCategory: resolve(__dirname, 'blog-category.html'),
         blogDetail: resolve(__dirname, 'blog-detail.html'),
