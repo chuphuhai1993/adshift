@@ -32,14 +32,14 @@ if (headerPlaceholder) {
 
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.remove('translate-x-full');
       document.body.style.overflow = 'hidden'; // Prevent background scrolling
     });
   }
 
   if (closeMobileMenuBtn && mobileMenu) {
     closeMobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.add('translate-x-full');
       document.body.style.overflow = '';
     });
   }
@@ -51,10 +51,16 @@ if (headerPlaceholder) {
         // Toggle active class for icon rotation
         btn.classList.toggle('active');
         
-        // Toggle submenu visibility
-        const submenu = btn.nextElementSibling;
-        if (submenu) {
-          submenu.classList.toggle('hidden');
+        // Toggle submenu visibility with animation
+        const submenuWrapper = btn.nextElementSibling;
+        if (submenuWrapper) {
+          if (btn.classList.contains('active')) {
+            submenuWrapper.classList.remove('max-h-0');
+            submenuWrapper.classList.add('max-h-[500px]');
+          } else {
+            submenuWrapper.classList.remove('max-h-[500px]');
+            submenuWrapper.classList.add('max-h-0');
+          }
         }
       });
     });
@@ -165,6 +171,80 @@ if (partnerGrid) {
   ];
 
   partnerGrid.innerHTML = partners.map(partner => createPartnerCard(partner)).join('');
+}
+
+const caseStudyGrid = document.querySelector('#case-study-grid');
+if (caseStudyGrid) {
+  const caseStudies = [
+    {
+      category: 'E-commerce',
+      logo: 'assets/logo_partner_tiktok.png',
+      title: 'Fashion Brand Growth',
+      description: 'Scaled a local fashion brand to international markets using TikTok Shop and strategic creator collaborations.',
+      stats: {
+        cpm: '$2.45',
+        cpa: '$12.20',
+        roas: '4.5x'
+      }
+    },
+    {
+      category: 'Education',
+      logo: 'assets/logo_partner_google.png',
+      title: 'EdTech Enrollment',
+      description: 'Increased student enrollment for an online learning platform through targeted Search and YouTube campaigns.',
+      stats: {
+        cpm: '$15.80',
+        cpa: '$45.00',
+        roas: '3.2x'
+      }
+    },
+    {
+      category: 'Game',
+      logo: 'assets/logo_partner_meta.png',
+      title: 'Mobile Game Launch',
+      description: 'Drove over 1 million downloads in the first month using Meta Advantage+ campaigns and high-performing video creatives.',
+      stats: {
+        cpm: '$5.20',
+        cpa: '$0.85',
+        roas: '2.8x'
+      }
+    },
+    {
+      category: 'E-commerce',
+      logo: 'assets/logo_partner_google.png',
+      title: 'Tech Gadgets Scale',
+      description: 'Optimized PMax campaigns to double revenue while maintaining the same advertising spend for a tech retailer.',
+      stats: {
+        cpm: '$8.15',
+        cpa: '$22.40',
+        roas: '5.1x'
+      }
+    },
+    {
+      category: 'Game',
+      logo: 'assets/logo_partner_tiktok.png',
+      title: 'RPG User Acquisition',
+      description: 'Implemented specialized bidding strategies to acquire high-LTV players for a new fantasy RPG title.',
+      stats: {
+        cpm: '$12.30',
+        cpa: '$3.50',
+        roas: '3.8x'
+      }
+    },
+    {
+      category: 'Education',
+      logo: 'assets/logo_partner_meta.png',
+      title: 'Language App Expansion',
+      description: 'Expanded market reach to Southeast Asia with localized creative content and audience targeting.',
+      stats: {
+        cpm: '$4.10',
+        cpa: '$1.20',
+        roas: '4.2x'
+      }
+    }
+  ];
+
+  caseStudyGrid.innerHTML = caseStudies.map(study => createCaseStudyCard(study)).join('');
 }
 
 // Table of Content Toggle
@@ -314,37 +394,37 @@ const faqItems = [
   {
     question: "1. Why use an ADShift Agency Account?",
     answer: "ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "2. What does it cost to use a Google Ads Agency account?",
     answer: "ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "3. Which payment methods are supported?",
     answer: "We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "4. How quickly can I get started?",
     answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "5. What level of support do you provide?",
     answer: "Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "6. What happens if an advertising account is suspended or banned?",
     answer: "If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",
-    isOpen: true
+    isOpen: false
   },
   {
     question: "7. How quickly can I get started?",
     answer: "After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",
-    isOpen: true
+    isOpen: false
   }
 ];
 
