@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const n of s)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function a(s){const n={};return s.integrity&&(n.integrity=s.integrity),s.referrerPolicy&&(n.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?n.credentials="include":s.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(s){if(s.ep)return;s.ep=!0;const n=a(s);fetch(s.href,n)}})();const se=`<header class="fixed top-0 left-0 right-0 z-50 p-4">
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const n of s)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function a(s){const n={};return s.integrity&&(n.integrity=s.integrity),s.referrerPolicy&&(n.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?n.credentials="include":s.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(s){if(s.ep)return;s.ep=!0;const n=a(s);fetch(s.href,n)}})();const ie=`<header class="fixed top-0 left-0 right-0 z-50 p-4">
     <div class="container mx-auto relative px-6 py-3 flex justify-between items-center">
         <!-- Header Background -->
         <div class="absolute inset-0 bg-white/60 backdrop-blur-md rounded-2xl border border-black/10 -z-10"></div>
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="relative group">
-                    <a class="hover:text-blue-600 transition text-gray-700 font-medium flex items-center gap-1">
+                    <a href="blog.html" class="hover:text-blue-600 transition text-gray-700 font-medium flex items-center gap-1">
                         Blog
                         <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </a>
@@ -62,22 +62,22 @@
                         <div class="relative p-2">
                             <ul class="flex flex-col text-left">
                                 <li>
-                                    <a href="blog.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="blog-category.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Google Ads
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="blog-category.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Facebook Ads
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="blog-category.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         Tiktok Ads
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
+                                    <a href="blog-category.html" class="block px-4 py-3 text-gray-700 text-sm hover:text-gray-900 hover:bg-[#E7E8EA] rounded-2xl transition-colors font-medium">
                                         News
                                     </a>
                                 </li>
@@ -217,7 +217,7 @@
              </div>
         </div>
     </div>
-`,ae=`<header id="simple-header" class="fixed top-0 left-0 right-0 z-50 p-4 transition-transform duration-300">
+`,re=`<header id="simple-header" class="fixed top-0 left-0 right-0 z-50 p-4 transition-transform duration-300">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="./" class="flex items-center space-x-2">
             <img src="assets/ADShift_logo_light.svg" alt="ADShift Logo" class="h-8">
@@ -255,7 +255,7 @@
         </nav>
     </div>
 </header>
-`,oe=`<footer class="bg-[#F5F6F7] text-gray-600 pt-16 pb-8 border-t border-gray-200 mt-auto">
+`,le=`<footer class="bg-[#F5F6F7] text-gray-600 pt-16 pb-8 border-t border-gray-200 mt-auto">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <!-- Cột 1: Logo & Slogan -->
@@ -309,7 +309,7 @@
         </div>
     </div>
 </footer>
-`,ie=`<!-- Process Section -->
+`,ce=`<!-- Process Section -->
 <section class="py-20 relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-100 bg-[url('assets/bgg_1.png')] bg-cover bg-center">
     <div class="container mx-auto px-4 relative z-10"> 
         <div class="mb-16">
@@ -351,7 +351,7 @@
             </div>
         </div>
     </div>
-</section>`,re=`<!-- Testimonials Section -->
+</section>`,de=`<!-- Testimonials Section -->
 <section class="">
 
     <div
@@ -544,7 +544,7 @@
             </div>
         </div>
     </div>
-</section>`,le=`<section class="py-20">
+</section>`,ue=`<section class="py-20">
     <div class="container mx-auto px-4 text-center">
         <div class="flex items-center justify-center">
             <img src="assets/icon_title.svg" class="h-5 mr-2">
@@ -582,7 +582,7 @@
             </div>
         </div>
     </div>
-</section>`,ce=`<div class="container mx-auto px-4 relative z-10">
+</section>`,me=`<div class="container mx-auto px-4 relative z-10">
     <div class="mb-12">
         <div class="flex items-center">
             <img src="assets/icon_title.svg" class="h-5 mr-2">
@@ -688,7 +688,7 @@
             </button>
         </div>
     </div>
-</div>`,de=`<section class="py-20 px-4">
+</div>`,ge=`<section class="py-20 px-4">
     <div class="bg-[url('/assets/bgg_2.png')] bg-cover bg-center container mx-auto gradient-secondary rounded-3xl p-8 md:p-16 relative overflow-hidden">
         <div class="relative z-10 max-w-2xl">
             <h2 class="text-3xl md:text-4xl font-bold text-gradient mb-4">Ready to Scale Without Limits?</h2>
@@ -712,7 +712,7 @@
             </div>
         </div>
     </div>
-</section>`,b=`<a href="blog-detail.html">
+</section>`,r=`<a href="blog-detail.html">
     <div class="group cursor-pointer">
         <div class="h-64 bg-gray-200 rounded-xl overflow-hidden mb-4">
             <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Blog" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -723,8 +723,15 @@
             <span>January 10, 2026</span>
         </div>
         <h3 class="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition">How to Improve ROAS in Mobile Games Without Higher UA Costs</h3>
+        <div class="flex items-center mt-2">
+            <div class="w-6 h-6 rounded-full overflow-hidden mr-2 border border-blue-100">
+                <img src="assets/character.png" alt="Author" class="w-full h-full object-cover">
+            </div>
+            <span class="text-xs font-medium text-gray-700">Muhammad Zee</span>
+        </div>
     </div>
-</a>`,ue=`<a href="#" class="flex gap-4 group">
+</a>
+`,pe=`<a href="#" class="flex gap-4 group">
     <div class="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
         <img src="assets/our_case.png" alt="Post thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
     </div>
@@ -737,7 +744,7 @@
         <h5 class="text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">LTV Mobile Games: How to Calculate & Increase Lifetime Value</h5>
     </div>
 </a>
-`,me=`<div class="flex flex-col sm:flex-row gap-6 items-start pb-8 border-b border-gray-100 last:border-0 last:pb-0">
+`,be=`<div class="flex flex-col sm:flex-row gap-6 items-start pb-8 border-b border-gray-100 last:border-0 last:pb-0">
     <a href="blog-detail.html" class="w-full sm:w-64 h-48 rounded-2xl overflow-hidden flex-shrink-0 block group">
         <img src="assets/our_case.png" alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
     </a>
@@ -764,7 +771,7 @@
         </p>
     </div>
 </div>
-`;function ge(e){return`
+`;function he(e){return`
     <div class="bg-white rounded-3xl p-4 pb-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
         <div class="bg-gray-50 rounded-2xl h-48 mb-6 relative flex items-center justify-center overflow-hidden">
             <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-medium text-gray-600 z-10">${e.category}</span>
@@ -799,7 +806,7 @@
             </a>
         </div>
     </div>
-  `}function pe(e){return`
+  `}function fe(e){return`
     <div class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all group overflow-hidden flex flex-col">
         <div class="bg-gray-50 p-8 h-56 flex items-center justify-center relative">
             <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded-2xl border border-gray-100  z-10">
@@ -820,7 +827,7 @@
             </button>
         </div>
     </div>
-  `}function be(e,t,a=!1){return`
+  `}function xe(e,t,a=!1){return`
         <details class="group mb-6" ${a?"open":""}>
             <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
                 <span>${e}</span>
@@ -836,7 +843,7 @@
                 ${t}
             </p>
         </details>
-    `}function he(e,t){const a=t.map(o=>be(o.question,o.answer,o.isOpen)).join("");return`
+    `}function ve(e,t){const a=t.map(o=>xe(o.question,o.answer,o.isOpen)).join("");return`
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-4 max-w-4xl">
                 <div class="space-y-4">
@@ -849,4 +856,4 @@
                 </div>
             </div>
         </section>
-    `}const k=document.querySelector("#header-placeholder");if(k){k.innerHTML=se;const e=document.getElementById("mobile-menu-btn"),t=document.getElementById("close-mobile-menu-btn"),a=document.getElementById("mobile-menu"),o=document.querySelectorAll(".mobile-accordion-btn");e&&a&&e.addEventListener("click",()=>{a.classList.remove("translate-x-full"),document.body.style.overflow="hidden"}),t&&a&&t.addEventListener("click",()=>{a.classList.add("translate-x-full"),document.body.style.overflow=""}),o&&o.forEach(s=>{s.addEventListener("click",()=>{s.classList.toggle("active");const n=s.nextElementSibling;n&&(s.classList.contains("active")?(n.classList.remove("max-h-0"),n.classList.add("max-h-[500px]")):(n.classList.remove("max-h-[500px]"),n.classList.add("max-h-0")))})})}const A=document.querySelector("#simple-header-placeholder");if(A){A.innerHTML=ae;const e=document.getElementById("simple-header");e&&window.addEventListener("scroll",()=>{window.scrollY>50?e.classList.add("-translate-y-full"):e.classList.remove("-translate-y-full")})}const E=document.querySelector("#footer-placeholder");E&&(E.innerHTML=oe);const S=document.querySelector("#solutions-component");S&&(S.innerHTML=ce);const L=document.querySelector("#post-list-main-page");L&&(L.innerHTML=b.repeat(3));const M=document.querySelector("#post-list-blog-page");M&&(M.innerHTML=b.repeat(12));const T=document.querySelector("#post-list-detail-page");T&&(T.innerHTML=b.repeat(3));const B=document.querySelector("#post-sidebar-list-detail-page");B&&(B.innerHTML=ue.repeat(3));const j=document.querySelector("#author-post-list");j&&(j.innerHTML=me.repeat(5));const I=document.querySelector("#cta-component");I&&(I.innerHTML=de);const q=document.querySelector("#process-component");q&&(q.innerHTML=ie);const C=document.querySelector("#stats-component");C&&(C.innerHTML=le,fe());const H=document.querySelector("#testimonials-component");H&&(H.innerHTML=re);const _=document.querySelector("#partner-grid");if(_){const e=[{type:"Marketing Partner",name:"Google Ads",description:"Strategic partner for search and display advertising solutions, providing cutting-edge tools and insights to maximize campaign performance.",logoHtml:'<img src="assets/google_logo_11.svg" class="h-8" alt="Google Ads">'},{type:"Marketing Partner",name:"Meta Ads",description:"Official partner for social media marketing across Facebook and Instagram platforms, helping businesses reach their target audience effectively.",logoHtml:'<i class="fab fa-facebook text-blue-600 text-3xl"></i>'},{type:"Strategic Partner",name:"TikTok Ads",description:"Specialized agency partner for short-form video advertising and creative strategy on the TikTok platform.",logoHtml:'<i class="fab fa-tiktok text-black text-3xl"></i>'}];_.innerHTML=e.map(t=>pe(t)).join("")}const D=document.querySelector("#case-study-grid");if(D){const e=[{category:"E-commerce",logo:"assets/logo_partner_tiktok.png",title:"Fashion Brand Growth",description:"Scaled a local fashion brand to international markets using TikTok Shop and strategic creator collaborations.",stats:{cpm:"$2.45",cpa:"$12.20",roas:"4.5x"}},{category:"Education",logo:"assets/logo_partner_google.png",title:"EdTech Enrollment",description:"Increased student enrollment for an online learning platform through targeted Search and YouTube campaigns.",stats:{cpm:"$15.80",cpa:"$45.00",roas:"3.2x"}},{category:"Game",logo:"assets/logo_partner_meta.png",title:"Mobile Game Launch",description:"Drove over 1 million downloads in the first month using Meta Advantage+ campaigns and high-performing video creatives.",stats:{cpm:"$5.20",cpa:"$0.85",roas:"2.8x"}},{category:"E-commerce",logo:"assets/logo_partner_google.png",title:"Tech Gadgets Scale",description:"Optimized PMax campaigns to double revenue while maintaining the same advertising spend for a tech retailer.",stats:{cpm:"$8.15",cpa:"$22.40",roas:"5.1x"}},{category:"Game",logo:"assets/logo_partner_tiktok.png",title:"RPG User Acquisition",description:"Implemented specialized bidding strategies to acquire high-LTV players for a new fantasy RPG title.",stats:{cpm:"$12.30",cpa:"$3.50",roas:"3.8x"}},{category:"Education",logo:"assets/logo_partner_meta.png",title:"Language App Expansion",description:"Expanded market reach to Southeast Asia with localized creative content and audience targeting.",stats:{cpm:"$4.10",cpa:"$1.20",roas:"4.2x"}}];D.innerHTML=e.map(t=>ge(t)).join("")}const P=document.querySelector("#toc-toggle"),O=document.querySelector("#toc-content"),F=document.querySelector("#toc-icon");P&&O&&F&&P.addEventListener("click",()=>{O.classList.toggle("hidden"),F.classList.toggle("rotate-180")});const R=document.getElementById("edit-customer-info-btn"),m=document.getElementById("customer-info-modal"),G=document.getElementById("save-customer-info-btn"),$=document.getElementById("cancel-customer-info-btn"),z=document.getElementById("modal-backdrop");if(R&&m){const e=t=>{t?m.classList.remove("hidden"):m.classList.add("hidden")};R.addEventListener("click",t=>{t.preventDefault(),e(!0)}),$&&$.addEventListener("click",()=>e(!1)),z&&z.addEventListener("click",()=>e(!1)),G&&G.addEventListener("click",()=>{e(!1)})}const W=document.getElementById("edit-order-info-btn"),g=document.getElementById("order-info-modal"),N=document.getElementById("save-order-info-btn"),U=document.getElementById("cancel-order-info-btn"),V=document.getElementById("close-order-modal-btn"),J=document.getElementById("order-modal-backdrop");if(W&&g){const e=t=>{t?(g.classList.remove("hidden"),document.body.style.overflow="hidden"):(g.classList.add("hidden"),document.body.style.overflow="")};W.addEventListener("click",t=>{t.preventDefault(),e(!0)}),U&&U.addEventListener("click",()=>e(!1)),V&&V.addEventListener("click",()=>e(!1)),J&&J.addEventListener("click",()=>e(!1)),N&&N.addEventListener("click",()=>{e(!1)})}const l=document.getElementById("toggle-tkqc-btn"),c=document.getElementById("tkqc-details"),p=document.getElementById("toggle-icon");l&&c&&p&&l.addEventListener("click",()=>{c.classList.contains("hidden")?(c.classList.remove("hidden"),p.classList.remove("rotate-180"),l.querySelector("span").textContent="Đóng"):(c.classList.add("hidden"),p.classList.add("rotate-180"),l.querySelector("span").textContent="Mở chi tiết")});function fe(){const e=new IntersectionObserver(a=>{a.forEach(o=>{o.isIntersecting&&(o.target.querySelectorAll(".js-counter").forEach(n=>{const i=parseFloat(n.getAttribute("data-target")),h=n.getAttribute("data-prefix")||"",f=n.getAttribute("data-suffix")||"",x=parseInt(n.getAttribute("data-decimals")||"0"),Z=2e3,v=0,K=performance.now();function y(Q){const ee=Q-K,w=Math.min(ee/Z,1),te=1-Math.pow(1-w,4),ne=v+(i-v)*te;n.innerText=h+ne.toFixed(x)+f,w<1?requestAnimationFrame(y):n.innerText=h+i.toFixed(x)+f}requestAnimationFrame(y)}),e.unobserve(o.target))})},{threshold:.2}),t=document.querySelector("#stats-component");t&&e.observe(t)}const xe=[{question:"1. Why use an ADShift Agency Account?",answer:"ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",isOpen:!1},{question:"2. What does it cost to use a Google Ads Agency account?",answer:"ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",isOpen:!1},{question:"3. Which payment methods are supported?",answer:"We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",isOpen:!1},{question:"4. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!1},{question:"5. What level of support do you provide?",answer:"Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",isOpen:!1},{question:"6. What happens if an advertising account is suspended or banned?",answer:"If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",isOpen:!1},{question:"7. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!1}],Y=document.querySelector("#faq-component");Y&&(Y.innerHTML=he("FAQ",xe));document.addEventListener("click",e=>{if(e.target.closest(".btn-increase")){const t=e.target.closest(".flex").querySelector(".quantity-input");t.value=parseInt(t.value)+1}if(e.target.closest(".btn-decrease")){const t=e.target.closest(".flex").querySelector(".quantity-input"),a=parseInt(t.value);a>0&&(t.value=a-1)}});const X=document.querySelectorAll(".payment-radio"),d=document.getElementById("card-form"),u=document.getElementById("usdt-form");X.length>0&&X.forEach(e=>{e.addEventListener("change",t=>{const a=t.target.value;d&&d.classList.add("hidden"),u&&u.classList.add("hidden"),a==="card"&&d?d.classList.remove("hidden"):a==="usdt"&&u&&u.classList.remove("hidden")})});const r=document.querySelector("#usdt-form button");r&&r.addEventListener("click",()=>{const e=document.querySelector("#usdt-form input");if(e){e.select(),document.execCommand("copy");const t=r.innerHTML;r.innerHTML='<svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>',setTimeout(()=>{r.innerHTML=t},2e3)}});
+    `}const k=document.querySelector("#header-placeholder");if(k){k.innerHTML=ie;const e=document.getElementById("mobile-menu-btn"),t=document.getElementById("close-mobile-menu-btn"),a=document.getElementById("mobile-menu"),o=document.querySelectorAll(".mobile-accordion-btn");e&&a&&e.addEventListener("click",()=>{a.classList.remove("translate-x-full"),document.body.style.overflow="hidden"}),t&&a&&t.addEventListener("click",()=>{a.classList.add("translate-x-full"),document.body.style.overflow=""}),o&&o.forEach(s=>{s.addEventListener("click",()=>{s.classList.toggle("active");const n=s.nextElementSibling;n&&(s.classList.contains("active")?(n.classList.remove("max-h-0"),n.classList.add("max-h-[500px]")):(n.classList.remove("max-h-[500px]"),n.classList.add("max-h-0")))})})}const A=document.querySelector("#simple-header-placeholder");if(A){A.innerHTML=re;const e=document.getElementById("simple-header");e&&window.addEventListener("scroll",()=>{window.scrollY>50?e.classList.add("-translate-y-full"):e.classList.remove("-translate-y-full")})}const E=document.querySelector("#footer-placeholder");E&&(E.innerHTML=le);const S=document.querySelector("#solutions-component");S&&(S.innerHTML=me);const L=document.querySelector("#post-list-main-page");L&&(L.innerHTML=r.repeat(3));const M=document.querySelector("#post-list-blog-google");M&&(M.innerHTML=r.repeat(6));const T=document.querySelector("#post-list-blog-meta");T&&(T.innerHTML=r.repeat(6));const B=document.querySelector("#post-list-blog-tiktok");B&&(B.innerHTML=r.repeat(6));const j=document.querySelector("#post-list-blog-bing");j&&(j.innerHTML=r.repeat(6));const q=document.querySelector("#post-list-detail-page");q&&(q.innerHTML=r.repeat(3));const I=document.querySelector("#post-sidebar-list-detail-page");I&&(I.innerHTML=pe.repeat(3));const H=document.querySelector("#author-post-list");H&&(H.innerHTML=be.repeat(5));const C=document.querySelector("#cta-component");C&&(C.innerHTML=ge);const _=document.querySelector("#process-component");_&&(_.innerHTML=ce);const D=document.querySelector("#stats-component");D&&(D.innerHTML=ue,ye());const O=document.querySelector("#testimonials-component");O&&(O.innerHTML=de);const P=document.querySelector("#partner-grid");if(P){const e=[{type:"Marketing Partner",name:"Google Ads",description:"Strategic partner for search and display advertising solutions, providing cutting-edge tools and insights to maximize campaign performance.",logoHtml:'<img src="assets/google_logo_11.svg" class="h-8" alt="Google Ads">'},{type:"Marketing Partner",name:"Meta Ads",description:"Official partner for social media marketing across Facebook and Instagram platforms, helping businesses reach their target audience effectively.",logoHtml:'<i class="fab fa-facebook text-blue-600 text-3xl"></i>'},{type:"Strategic Partner",name:"TikTok Ads",description:"Specialized agency partner for short-form video advertising and creative strategy on the TikTok platform.",logoHtml:'<i class="fab fa-tiktok text-black text-3xl"></i>'}];P.innerHTML=e.map(t=>fe(t)).join("")}const F=document.querySelector("#case-study-grid");if(F){const e=[{category:"E-commerce",logo:"assets/logo_partner_tiktok.png",title:"Fashion Brand Growth",description:"Scaled a local fashion brand to international markets using TikTok Shop and strategic creator collaborations.",stats:{cpm:"$2.45",cpa:"$12.20",roas:"4.5x"}},{category:"Education",logo:"assets/logo_partner_google.png",title:"EdTech Enrollment",description:"Increased student enrollment for an online learning platform through targeted Search and YouTube campaigns.",stats:{cpm:"$15.80",cpa:"$45.00",roas:"3.2x"}},{category:"Game",logo:"assets/logo_partner_meta.png",title:"Mobile Game Launch",description:"Drove over 1 million downloads in the first month using Meta Advantage+ campaigns and high-performing video creatives.",stats:{cpm:"$5.20",cpa:"$0.85",roas:"2.8x"}},{category:"E-commerce",logo:"assets/logo_partner_google.png",title:"Tech Gadgets Scale",description:"Optimized PMax campaigns to double revenue while maintaining the same advertising spend for a tech retailer.",stats:{cpm:"$8.15",cpa:"$22.40",roas:"5.1x"}},{category:"Game",logo:"assets/logo_partner_tiktok.png",title:"RPG User Acquisition",description:"Implemented specialized bidding strategies to acquire high-LTV players for a new fantasy RPG title.",stats:{cpm:"$12.30",cpa:"$3.50",roas:"3.8x"}},{category:"Education",logo:"assets/logo_partner_meta.png",title:"Language App Expansion",description:"Expanded market reach to Southeast Asia with localized creative content and audience targeting.",stats:{cpm:"$4.10",cpa:"$1.20",roas:"4.2x"}}];F.innerHTML=e.map(t=>he(t)).join("")}const R=document.querySelector("#toc-toggle"),G=document.querySelector("#toc-content"),$=document.querySelector("#toc-icon");R&&G&&$&&R.addEventListener("click",()=>{G.classList.toggle("hidden"),$.classList.toggle("rotate-180")});const z=document.getElementById("edit-customer-info-btn"),g=document.getElementById("customer-info-modal"),W=document.getElementById("save-customer-info-btn"),N=document.getElementById("cancel-customer-info-btn"),U=document.getElementById("modal-backdrop");if(z&&g){const e=t=>{t?g.classList.remove("hidden"):g.classList.add("hidden")};z.addEventListener("click",t=>{t.preventDefault(),e(!0)}),N&&N.addEventListener("click",()=>e(!1)),U&&U.addEventListener("click",()=>e(!1)),W&&W.addEventListener("click",()=>{e(!1)})}const V=document.getElementById("edit-order-info-btn"),p=document.getElementById("order-info-modal"),J=document.getElementById("save-order-info-btn"),Y=document.getElementById("cancel-order-info-btn"),X=document.getElementById("close-order-modal-btn"),Z=document.getElementById("order-modal-backdrop");if(V&&p){const e=t=>{t?(p.classList.remove("hidden"),document.body.style.overflow="hidden"):(p.classList.add("hidden"),document.body.style.overflow="")};V.addEventListener("click",t=>{t.preventDefault(),e(!0)}),Y&&Y.addEventListener("click",()=>e(!1)),X&&X.addEventListener("click",()=>e(!1)),Z&&Z.addEventListener("click",()=>e(!1)),J&&J.addEventListener("click",()=>{e(!1)})}const c=document.getElementById("toggle-tkqc-btn"),d=document.getElementById("tkqc-details"),b=document.getElementById("toggle-icon");c&&d&&b&&c.addEventListener("click",()=>{d.classList.contains("hidden")?(d.classList.remove("hidden"),b.classList.remove("rotate-180"),c.querySelector("span").textContent="Đóng"):(d.classList.add("hidden"),b.classList.add("rotate-180"),c.querySelector("span").textContent="Mở chi tiết")});function ye(){const e=new IntersectionObserver(a=>{a.forEach(o=>{o.isIntersecting&&(o.target.querySelectorAll(".js-counter").forEach(n=>{const i=parseFloat(n.getAttribute("data-target")),h=n.getAttribute("data-prefix")||"",f=n.getAttribute("data-suffix")||"",x=parseInt(n.getAttribute("data-decimals")||"0"),ee=2e3,v=0,te=performance.now();function y(ne){const se=ne-te,w=Math.min(se/ee,1),ae=1-Math.pow(1-w,4),oe=v+(i-v)*ae;n.innerText=h+oe.toFixed(x)+f,w<1?requestAnimationFrame(y):n.innerText=h+i.toFixed(x)+f}requestAnimationFrame(y)}),e.unobserve(o.target))})},{threshold:.2}),t=document.querySelector("#stats-component");t&&e.observe(t)}const we=[{question:"1. Why use an ADShift Agency Account?",answer:"ADShift Agency accounts provide a layer of trust and stability that standard accounts cannot match. We help you scale faster with higher spending limits, lower suspension risks, and direct support from our team.",isOpen:!1},{question:"2. What does it cost to use a Google Ads Agency account?",answer:"ADShift offers highly competitive pricing, starting from just 3.5% of your total top-up. There are no setup fees or hidden charges. This cost-efficient model gives you access to high-performance, fully managed agency accounts that scale smoothly across any business size or industry.",isOpen:!1},{question:"3. Which payment methods are supported?",answer:"We accept multiple payment options for maximum convenience, including Payoneer, Wise, cryptocurrencies, and bank transfers.",isOpen:!1},{question:"4. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!1},{question:"5. What level of support do you provide?",answer:"Every client is assigned a dedicated Account Manager available 7 days a week. Our team ensures your campaigns run smoothly and responds quickly to any questions or issues that arise.",isOpen:!1},{question:"6. What happens if an advertising account is suspended or banned?",answer:"If a Google Ads account is suspended, ADShift immediately migrates your remaining balance to a new verified account. This process minimizes disruption, avoids budget loss, and keeps your campaigns running with minimal downtime.",isOpen:!1},{question:"7. How quickly can I get started?",answer:"After your payment is completed, we begin the setup process promptly. Your agency account creation typically starts within one business day, with clear updates provided along the way.",isOpen:!1}],K=document.querySelector("#faq-component");K&&(K.innerHTML=ve("FAQ",we));document.addEventListener("click",e=>{if(e.target.closest(".btn-increase")){const t=e.target.closest(".flex").querySelector(".quantity-input");t.value=parseInt(t.value)+1}if(e.target.closest(".btn-decrease")){const t=e.target.closest(".flex").querySelector(".quantity-input"),a=parseInt(t.value);a>0&&(t.value=a-1)}});const Q=document.querySelectorAll(".payment-radio"),u=document.getElementById("card-form"),m=document.getElementById("usdt-form");Q.length>0&&Q.forEach(e=>{e.addEventListener("change",t=>{const a=t.target.value;u&&u.classList.add("hidden"),m&&m.classList.add("hidden"),a==="card"&&u?u.classList.remove("hidden"):a==="usdt"&&m&&m.classList.remove("hidden")})});const l=document.querySelector("#usdt-form button");l&&l.addEventListener("click",()=>{const e=document.querySelector("#usdt-form input");if(e){e.select(),document.execCommand("copy");const t=l.innerHTML;l.innerHTML='<svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>',setTimeout(()=>{l.innerHTML=t},2e3)}});
