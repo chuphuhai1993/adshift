@@ -107,6 +107,12 @@ if (postListBlogGoogle) {
   postListBlogGoogle.innerHTML = postItemHtml.repeat(6);
 }
 
+// Fallback for category page
+const postListBlogPageElement = document.querySelector('#post-list-blog-page');
+if (postListBlogPageElement) {
+  postListBlogPageElement.innerHTML = postItemHtml.repeat(12);
+}
+
 const postListBlogMeta = document.querySelector('#post-list-blog-meta');
 if (postListBlogMeta) {
   postListBlogMeta.innerHTML = postItemHtml.repeat(6);
